@@ -8,6 +8,10 @@ For an existing owned workspace, use `create_project` or `add_project_address` w
 
 New accounts use the separate official CLI v2 flow documented at [Agent setup](https://voicedot.ai/en/docs/agents) and [Authentication](https://voicedot.ai/auth.md). MCP does not register accounts. Identity verification and human handoff are preserved; no purchase or plan change is performed by this plugin.
 
+## Plugin identity
+
+The existing OpenAI plugin requires the internal package name `app-6a89786fda048191a6f634164f699c88`. The visible listing name is Voicedot and the MCP server key is `voicedot`. Keep this internal name when updating the same plugin; the portal rejects a different one. Generated client adapters inherit the canonical package name.
+
 ## Source of truth
 
 Hand-edit root `plugin.json`, root `mcp.json`, and the canonical skill tree. `npm run generate` projects the OpenAI/Codex compatibility files, Claude adapter and submission JSON. Do not hand-edit these generated files.

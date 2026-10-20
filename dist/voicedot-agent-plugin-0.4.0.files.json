@@ -3,18 +3,18 @@
   "files": [
     {
       "path": ".codex-plugin/plugin.json",
-      "bytes": 6066,
-      "sha256": "b3ed0a902609cd39af8500d9dafff298f78447ef574396e16f1a05c0c8258a74"
+      "bytes": 6094,
+      "sha256": "c18be995220dfd775edb6a30bd9b477cee01a9672d09dc33d4f7f73ff4cbfd2b"
     },
     {
       "path": ".mcp.json",
-      "bytes": 126,
-      "sha256": "924abbfea9612e537cf7a2a1517bdf19a3fc30edfab4081665ebb6bda38320b0"
+      "bytes": 318,
+      "sha256": "eee82f727bc5945c600871f5822a2e01742ae0172702a694b69c95b4abeb9b61"
     },
     {
       "path": "adapters/claude-code/.claude-plugin/plugin.json",
-      "bytes": 263,
-      "sha256": "a9341f6af28e159596c7d50d81eb50a92447d5bcd32f1d19acc46ded2781d10d"
+      "bytes": 291,
+      "sha256": "98e44904cd5b9adf4cddbd39fb90170b0262593fef193477ecc29047641177bd"
     },
     {
       "path": "adapters/claude-code/.mcp.json",
@@ -43,8 +43,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1706,
-      "sha256": "e79ffb4b7ac0250b574eb52205e3d88f4aa0a78effd7e0bc25406dc509a9cf08"
+      "bytes": 1793,
+      "sha256": "f803bf27d224de77e0a10dd37c8e6b7d557eda687d54446e76b1b739191f6fe6"
     },
     {
       "path": "contract/agent-guide.md",
@@ -123,18 +123,18 @@
     },
     {
       "path": "mcp.json",
-      "bytes": 198,
-      "sha256": "cfb29052ba0d79ff23a60a3f4ae261172aba63aab2e7c10b767e675362ffa2dc"
+      "bytes": 390,
+      "sha256": "143e692276b826e8bdd3c9975343c0b19f475a52882e89097321a28835e8839b"
     },
     {
       "path": "plugin.json",
-      "bytes": 6189,
-      "sha256": "c97b21bb74bb99fde50effd4b65d12afa41ad6a404b71f187fdb432e59a27e7f"
+      "bytes": 6217,
+      "sha256": "59b43d299a569cc11d25934a21c1eb69c030cb844f74932ffd44b8480df8faf1"
     },
     {
       "path": "README.md",
-      "bytes": 2704,
-      "sha256": "ff4605f7898dec8c40a756469ed31a43c05e4388e43696bc15aa9b1150a2a917"
+      "bytes": 3055,
+      "sha256": "00220ca6742c492dcdf1de5b03d39da7d595f059e7783895593cc406924b95a6"
     },
     {
       "path": "skills/review-voicedot-feedback/references/markdown-contract.md",

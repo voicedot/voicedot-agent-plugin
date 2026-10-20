@@ -2,6 +2,8 @@
 
 ## 0.4.0 - 2026-10-20
 
+- Preserve the existing OpenAI plugin internal identity required by its draft upload.
+
 - Mirror all 29 current MCP tools with exact schemas, scopes and annotations; derive submission flags from the mirror and detect runtime drift.
 - Update the skill for project addresses, Team/Public handovers, human review rounds, live permissions and confirmed reply retries.
 - Document separate CLI v2 account setup, human identity verification and first feedback.

@@ -16,6 +16,7 @@ test('portable manifests validate and generate the checked-in compatibility arti
   const mcp = json('mcp.json');
   validatePlugin(plugin);
   validateMcp(mcp);
+  assert.deepEqual(mcp.mcpServers.voicedot.extensions['com.openai'].auth, { type: 'oauth', client: { mode: 'dcr' } });
   assert.deepEqual(renderCompatibility(plugin, mcp), { plugin: json('.codex-plugin/plugin.json'), mcp: json('.mcp.json') });
 });
 
