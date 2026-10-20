@@ -3,8 +3,8 @@
   "files": [
     {
       "path": ".codex-plugin/plugin.json",
-      "bytes": 6066,
-      "sha256": "b3ed0a902609cd39af8500d9dafff298f78447ef574396e16f1a05c0c8258a74"
+      "bytes": 6235,
+      "sha256": "fc9d66bda4c51dfeb3398b8ff06fd9016f561d5cdf0503f9db6ca4ce53fca546"
     },
     {
       "path": ".mcp.json",
@@ -128,8 +128,8 @@
     },
     {
       "path": "plugin.json",
-      "bytes": 6189,
-      "sha256": "c97b21bb74bb99fde50effd4b65d12afa41ad6a404b71f187fdb432e59a27e7f"
+      "bytes": 6358,
+      "sha256": "cbc8db0360f53aa1ecc8f8763f3c17fd4a9ac46b18d4ebea7e6d3988ba6a479b"
     },
     {
       "path": "README.md",

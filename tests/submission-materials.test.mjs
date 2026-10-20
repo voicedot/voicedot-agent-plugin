@@ -20,7 +20,7 @@ test('submission cards are blocked owner preflight maps derived from canonical s
   assert.equal(cursor.pageOrSourceBlocker.source, 'https://cursor.com/marketplace/publish');
   assert.match(cursor.fields[0].reason, /Unverified official source/);
   assert.equal(openai.fields.find((field) => field.name === 'business identity and portal access').status, 'observed-in-portal');
-  assert.equal(openai.fields.find((field) => field.name === 'OAuth and domain challenge').status, 'verification-pending');
+  assert.equal(openai.fields.find((field) => field.name === 'OAuth and domain challenge').status, 'verified-for-saved-draft');
   assert.equal(anthropic.fields.find((field) => field.name.includes('directory management access')).status, 'delegable-prerequisite');
   assert.deepEqual(anthropic.fields.filter((field) => field.source).map((field) => field.source), ['https://claude.ai/admin-settings/directory/submissions/plugins/new', 'https://platform.claude.com/plugins/submit']);
   assert.equal(deriveCandidate().name, 'voicedot');

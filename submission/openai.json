@@ -1,7 +1,7 @@
 {
   "platform": "OpenAI",
   "status": "non-submitted",
-  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the current 29-tool contract, dedicated sample-data demo account, and actual ChatGPT acceptance. No upload or submission of this candidate has occurred.",
+  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the current 29-tool contract and dedicated demo account. An earlier 0.4.0 bundle is saved in an authorized OpenAI draft; these local review-expectation changes have not replaced that draft. Nothing has been sent for review.",
   "pageOrSourceBlocker": {
     "kind": "verified-page",
     "source": "https://developers.openai.com/plugins/deploy/submission",
@@ -20,23 +20,23 @@
     },
     {
       "name": "eight review test cases",
-      "status": "draft-unrun",
-      "reason": "Five positive and three negative cases use Harbor Notes and Fieldwork Notes. They require a dedicated ordinary demo account with sample data. Fresh ChatGPT desktop and native mobile runs remain pending."
+      "status": "partially-run",
+      "reason": "Five positive and three negative cases target Harbor Notes and Fieldwork Notes. Actual ChatGPT web project discovery, Team handover, scope denial and read-only boundaries have evidence; missing human-created fixtures, confirmed writes and native mobile still block complete acceptance."
     },
     {
       "name": "public website, support and privacy content",
-      "status": "fresh-check-pending",
-      "reason": "Fresh public-content and user-agent checks are required for the current listing URLs. Historical deployment evidence does not replace this acceptance."
+      "status": "partially-verified",
+      "reason": "20 October production checks cover listing HTTP/User-Agents, public privacy disclosures, and EN/PL desktop/mobile Chrome layouts. Two additional agent-instructions pages still return Cloudflare 1010 to default urllib. The Chrome screenshot matrix uses an existing cookie profile; a pristine-profile run remains separate."
     },
     {
       "name": "business identity and portal access",
       "status": "observed-in-portal",
-      "reason": "The existing draft in the Holy organization selects Business — Good Sheet Sp z o.o. The authenticated submission form is accessible; final authorization and attestation remain with the owner."
+      "reason": "Piotr selected Good Sheet Sp z o.o. as publisher. The Holy organization and a verified Business status were visible in the portal, but the exact legal business name was not independently visible. Piotr verifies the selected legal entity and final attestations."
     },
     {
       "name": "OAuth and domain challenge",
-      "status": "verification-pending",
-      "reason": "Current OAuth browser acceptance, exact domain challenge, saved portal configuration and tool scans remain pending."
+      "status": "verified-for-saved-draft",
+      "reason": "On 20 October the saved 0.4.0 draft showed Configured, a verified domain, 29 tools and no MCP findings. A separate private ChatGPT test installation connected, disconnected and reconnected successfully. New local bundle changes still require a final rebuild and authorized replacement of the same draft, followed by saved-version checks."
     },
     {
       "name": "final attestation",
@@ -66,7 +66,7 @@
   ],
   "result": {
     "status": "blocked",
-    "claim": "Preparation only. Reviewer setup, real ChatGPT acceptance, domain verification, a public demo video and owner attestations remain open. Nothing has been sent for review."
+    "claim": "No review submission. The saved draft has verified OAuth/domain/scans and actual ChatGPT web evidence. Complete demo fixtures, remaining runtime cases, fresh CLI/human journeys, native mobile, a verified recording URL and private owner fields remain open. These local changes are not a replacement of the saved portal draft."
   },
-  "recovery": "Complete dedicated demo data, current OAuth and desktop/mobile case runs, domain verification and portal scans; record the actual video; let the owner enter credentials and attestations. Submit only after the owner explicitly instructs it."
+  "recovery": "Complete remaining evidence and human actions, add and verify the recording, rebuild and inspect the final ZIP, replace the same saved draft while preserving its identity and MCP binding, recheck portal findings, and obtain owner attestations. Submit only after Piotr explicitly says wyślij."
 }

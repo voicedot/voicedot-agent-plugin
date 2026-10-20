@@ -37,13 +37,13 @@
             {
               "description": "Read the button conversation and its replies.",
               "prompt": "Show me the conversation about the Start a workspace button, with the replies.",
-              "tools_triggered": "search_pins, get_pin_thread",
+              "tools_triggered": "search_pins with fields=full, or search_pins followed by get_pin_thread when the search result lacks full thread history",
               "expected_behavior": "Show the original contrast note, its page context, and the team reply about making the button darker, in chronological order."
             },
             {
               "description": "Read the conversation explicitly handed to an agent in Team mode.",
               "prompt": "What did my team hand over to you in Fieldwork Notes?",
-              "tools_triggered": "search_pins or get_next_steps, get_pin_thread",
+              "tools_triggered": "search_pins with fields=full or get_next_steps; get_pin_thread only when the result lacks full handed-over thread history",
               "expected_behavior": "Show the offline-headline conversation and team note requesting a headline under eight words. Do not expose the other conversation, which has not been handed over."
             },
             {
