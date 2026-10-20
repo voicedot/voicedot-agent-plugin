@@ -26,7 +26,7 @@
     {
       "name": "public website, support and privacy content",
       "status": "partially-verified",
-      "reason": "20 October production checks cover listing HTTP/User-Agents, public privacy disclosures, and EN/PL desktop/mobile Chrome layouts. Two additional agent-instructions pages still return Cloudflare 1010 to default urllib. The Chrome screenshot matrix uses an existing cookie profile; a pristine-profile run remains separate."
+      "reason": "20 October production checks cover listing HTTP/User-Agents, public privacy disclosures, and EN/PL desktop/mobile Chrome layouts. After the owner-confirmed exact-path BIC correction, all 28 focused discovery/HEAD/MCP/outside-scope checks pass. The Chrome screenshot matrix uses an existing cookie profile; a pristine-profile run remains separate."
     },
     {
       "name": "business identity and portal access",
@@ -36,7 +36,7 @@
     {
       "name": "OAuth and domain challenge",
       "status": "verified-for-saved-draft",
-      "reason": "On 20 October the saved 0.4.0 draft showed Configured, a verified domain, 29 tools and no MCP findings. A separate private ChatGPT test installation connected, disconnected and reconnected successfully. New local bundle changes still require a final rebuild and authorized replacement of the same draft, followed by saved-version checks."
+      "reason": "On 20 October the saved 0.4.0 draft showed Configured, a verified domain, 29 tools and no MCP findings. A separate private ChatGPT test installation connected, disconnected, reconnected and automatically rotated refresh credentials; a real call after the original access expiry succeeded. Revoked-bearer HTTP replay remains separate. New local bundle changes still need authorized replacement of the same draft and saved-version checks."
     },
     {
       "name": "final attestation",
