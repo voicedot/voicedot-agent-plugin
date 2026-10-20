@@ -10,7 +10,7 @@ New accounts use the separate official CLI v2 flow documented at [Agent setup](h
 
 ## Plugin identity
 
-The existing OpenAI plugin requires the internal package name `app-6a89786fda048191a6f634164f699c88`. The visible listing name is Voicedot and the MCP server key is `voicedot`. Keep this internal name when updating the same plugin; the portal rejects a different one. Generated client adapters inherit the canonical package name.
+The canonical package name and MCP server key are `voicedot`; the visible listing name is Voicedot. Candidate 0.4.0 targets a new OpenAI draft authorized by the owner after the older unsubmitted entry could not reuse its unavailable MCP connection. This archive does not replace that older entry.
 
 ## Source of truth
 

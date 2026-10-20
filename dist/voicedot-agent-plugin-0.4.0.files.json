@@ -3,8 +3,8 @@
   "files": [
     {
       "path": ".codex-plugin/plugin.json",
-      "bytes": 6094,
-      "sha256": "c18be995220dfd775edb6a30bd9b477cee01a9672d09dc33d4f7f73ff4cbfd2b"
+      "bytes": 6066,
+      "sha256": "b3ed0a902609cd39af8500d9dafff298f78447ef574396e16f1a05c0c8258a74"
     },
     {
       "path": ".mcp.json",
@@ -13,8 +13,8 @@
     },
     {
       "path": "adapters/claude-code/.claude-plugin/plugin.json",
-      "bytes": 291,
-      "sha256": "98e44904cd5b9adf4cddbd39fb90170b0262593fef193477ecc29047641177bd"
+      "bytes": 263,
+      "sha256": "a9341f6af28e159596c7d50d81eb50a92447d5bcd32f1d19acc46ded2781d10d"
     },
     {
       "path": "adapters/claude-code/.mcp.json",
@@ -43,8 +43,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1793,
-      "sha256": "f803bf27d224de77e0a10dd37c8e6b7d557eda687d54446e76b1b739191f6fe6"
+      "bytes": 1864,
+      "sha256": "9e8d8a003305b7a0bf7ef80a9c6b07b0270f79dba3c0d3c39ad305e0c3b9a848"
     },
     {
       "path": "contract/agent-guide.md",
@@ -128,13 +128,13 @@
     },
     {
       "path": "plugin.json",
-      "bytes": 6217,
-      "sha256": "59b43d299a569cc11d25934a21c1eb69c030cb844f74932ffd44b8480df8faf1"
+      "bytes": 6189,
+      "sha256": "c97b21bb74bb99fde50effd4b65d12afa41ad6a404b71f187fdb432e59a27e7f"
     },
     {
       "path": "README.md",
-      "bytes": 3055,
-      "sha256": "00220ca6742c492dcdf1de5b03d39da7d595f059e7783895593cc406924b95a6"
+      "bytes": 3022,
+      "sha256": "48c2a663358ab0fdf78a634cd7fba281fe30d353738c8873ad5d1e3d1781847b"
     },
     {
       "path": "skills/review-voicedot-feedback/references/markdown-contract.md",

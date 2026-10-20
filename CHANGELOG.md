@@ -2,7 +2,7 @@
 
 ## 0.4.0 - 2026-10-20
 
-- Preserve the existing OpenAI plugin internal identity required by its draft upload.
+- Prepare a new owner-authorized OpenAI draft with the portable `voicedot` identity and explicit OAuth DCR; preserve the older unsubmitted entry separately.
 
 - Mirror all 29 current MCP tools with exact schemas, scopes and annotations; derive submission flags from the mirror and detect runtime drift.
 - Update the skill for project addresses, Team/Public handovers, human review rounds, live permissions and confirmed reply retries.

@@ -15,7 +15,7 @@ const keysOnly = (value, allowed, label) => Object.keys(value).every((key) => al
 
 export function validatePlugin(plugin) {
   keysOnly(plugin, ['$schema', 'name', 'version', 'description', 'author', 'homepage', 'repository', 'license', 'keywords', 'extensions'], 'plugin.json');
-  if (plugin.$schema !== pluginSchema || plugin.name !== 'app-6a89786fda048191a6f634164f699c88' || !/^\d+\.\d+\.\d+$/.test(plugin.version)) fail('plugin.json identity or schema is invalid');
+  if (plugin.$schema !== pluginSchema || plugin.name !== 'voicedot' || !/^\d+\.\d+\.\d+$/.test(plugin.version)) fail('plugin.json identity or schema is invalid');
   if (!/^[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?$/.test(plugin.name)) fail('plugin name is invalid');
   if (!plugin.author || typeof plugin.author.name !== 'string') fail('plugin author is invalid');
   keysOnly(plugin.author, ['name', 'email', 'url'], 'plugin.json author');

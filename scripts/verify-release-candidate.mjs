@@ -72,7 +72,7 @@ export function collectReleaseCandidateEvidence({ repoRoot = root, run = command
     inventory: Array.isArray(inventory.files) && inventory.files.every((entry) => entry.path && entry.sha256 && Number.isInteger(entry.bytes)),
     digest: digest === (archiveSha256 ? `${archiveSha256}  ${archiveName}\n` : ''),
     digestMatchesArchive: Boolean(archiveSha256) && digest.startsWith(archiveSha256),
-    manifests: plugin.name === 'app-6a89786fda048191a6f634164f699c88' && existsSync(resolve(repoRoot, 'mcp.json')),
+    manifests: plugin.name === 'voicedot' && existsSync(resolve(repoRoot, 'mcp.json')),
     generatedAdapter: existsSync(resolve(repoRoot, '.codex-plugin/plugin.json')) && existsSync(resolve(repoRoot, '.mcp.json')),
     catalog: JSON.stringify(catalog.cases.map(({ id }) => id)) === JSON.stringify(expectedCatalogIds),
     packageGates,
