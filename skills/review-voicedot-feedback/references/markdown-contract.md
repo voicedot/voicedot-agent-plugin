@@ -1,5 +1,5 @@
-# VoiceDot Markdown contract
+# Voicedot Markdown contract
 
-Use these sections in order: `# VoiceDot Feedback Brief`, `## Query and coverage`, `## Executive overview (derived)`, `## Conversations and evidence`, `## Recurring themes (derived)`, `## Founder decisions`, `## Conflicts, uncertainty, and missing evidence`, `## Potential requirements (derived, not approved)`, `## Safety and exclusions`, `## Evidence index`, and `## Workflow boundary`.
+For an explicitly requested brief, use: `# Voicedot Feedback Brief`, `## Query and coverage`, `## Summary (Derived)`, `## Conversations and evidence`, `## Themes (Derived)`, `## Decisions needed`, `## Conflicts and missing evidence`, `## Potential requirements (Derived, not approved)`, `## Safety and exclusions`, and `## Evidence index`.
 
-Preserve safe evidence faithfully. Label every observation, theme, uncertainty, conflict, and possible requirement as derived and cite stable evidence IDs. Never reconstruct withheld evidence. End by stating that no VoiceDot data, external system, source file, or visitor conversation changed.
+Cite stable evidence IDs, preserve safe chronology, disclose partial coverage, and never reconstruct withheld evidence. State accurately which actions, if any, were performed; a brief itself does not authorize changes.

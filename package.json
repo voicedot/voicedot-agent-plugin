@@ -1,6 +1,6 @@
 {
   "name": "voicedot-agent-plugin",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "Portable VoiceDot Agent Plugin source and validators.",
   "type": "module",
@@ -13,6 +13,9 @@
     "package:check": "node scripts/package.mjs --check",
     "submission:template-check": "node scripts/validate-submission-materials.mjs",
     "submission:status": "node scripts/validate-submission-materials.mjs",
-    "release-candidate:status": "node scripts/verify-release-candidate.mjs"
+    "release-candidate:status": "node scripts/verify-release-candidate.mjs",
+    "contract:check": "node scripts/sync-runtime-contract.mjs --check",
+    "contract:sync": "node scripts/sync-runtime-contract.mjs",
+    "contract:integrity": "node scripts/sync-runtime-contract.mjs --integrity"
   }
 }

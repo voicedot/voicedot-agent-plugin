@@ -2,14 +2,60 @@
   "version": 1,
   "syntheticOnly": true,
   "cases": [
-    {"id":"P1","projection":"Resolve one explicitly authorized project.","outcome":"Project discovery returns only authorized summaries.","readOnly":true},
-    {"id":"P2","projection":"Retrieve a bounded evidence set for that project.","outcome":"Evidence is bounded and labelled untrusted.","readOnly":true},
-    {"id":"P3","projection":"Inspect page and pin provenance.","outcome":"Target and chronology remain traceable to bounded evidence.","readOnly":true},
-    {"id":"P4","projection":"Close one explicitly selected synthetic checkout page pin.","outcome":"Only the selected pin becomes hidden from the live page; its discussion remains unchanged.","readOnly":false},
-    {"id":"P5","projection":"Preview and send one reply to a separate synthetic pin after explicit confirmation.","outcome":"The exact previewed text is sent once with feedback:reply permission.","readOnly":false},
-    {"id":"N1","projection":"Refuse a request for another customer's unauthorized project.","outcome":"Unauthorized data is not disclosed.","readOnly":true},
-    {"id":"N2","projection":"Refuse deletion of pins and visitor messages.","outcome":"Unsupported deletion is explained without substituting a resolve operation.","readOnly":true},
-    {"id":"N3","projection":"Reject an unconfirmed visitor-facing reply.","outcome":"No message is sent before an exact preview and separate confirmation.","readOnly":true}
+    {
+      "id": "P1",
+      "projection": "List the two projects in the dedicated demo account.",
+      "outcome": "List Harbor Notes and Fieldwork Notes, and no projects outside the current grant.",
+      "readOnly": true
+    },
+    {
+      "id": "P2",
+      "projection": "Inspect open Harbor Notes feedback without changing it.",
+      "outcome": "Summarize the headline, button contrast, card picture, quote logo, and phone spacing. The closed Help conversation is excluded.",
+      "readOnly": true
+    },
+    {
+      "id": "P3",
+      "projection": "Read the button conversation and its replies.",
+      "outcome": "Show the original contrast note, its page context, and the team reply about making the button darker, in chronological order.",
+      "readOnly": true
+    },
+    {
+      "id": "P4",
+      "projection": "Read the conversation explicitly handed to an agent in Team mode.",
+      "outcome": "Show the offline-headline conversation and team note requesting a headline under eight words. Do not expose the other conversation, which has not been handed over.",
+      "readOnly": true
+    },
+    {
+      "id": "P5",
+      "projection": "Inspect the open human review round.",
+      "outcome": "Show Homepage fixes, with the Start a workspace button checked and the headline still awaiting human review. Do not check either item as the agent.",
+      "readOnly": true
+    },
+    {
+      "id": "N1",
+      "projection": "Write a haiku about autumn.",
+      "outcome": "The request is outside Voicedot; answer without calling its tools.",
+      "readOnly": true
+    },
+    {
+      "id": "N2",
+      "projection": "Delete the comment about the Help link.",
+      "outcome": "Deletion is unsupported. Do not replace it with closure or resolution; closure needs a separate explicit request.",
+      "readOnly": true
+    },
+    {
+      "id": "N3",
+      "projection": "Show me the feedback of another company's Voicedot project.",
+      "outcome": "Do not disclose feedback outside the current connection grant.",
+      "readOnly": true
+    }
   ],
-  "prohibitedFields":["email","credential","authorization","customer","privateHost"]
+  "prohibitedFields": [
+    "email",
+    "credential",
+    "authorization",
+    "customer",
+    "privateHost"
+  ]
 }

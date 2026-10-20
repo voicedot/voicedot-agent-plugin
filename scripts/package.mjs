@@ -18,7 +18,7 @@ const runtimeFiles = new Set([
   '.codex-plugin/plugin.json', '.mcp.json', 'plugin.json', 'mcp.json',
   'README.md', 'LICENSE', 'CHANGELOG.md',
 ]);
-const runtimeDirectories = ['skills/', 'adapters/claude-code/', 'assets/'];
+const runtimeDirectories = ['skills/', 'adapters/claude-code/', 'assets/', 'contract/'];
 
 // A gzip stream with uncompressed DEFLATE stored blocks is deliberately used
 // here instead of zlib compression. Its bytes are specified below, rather than

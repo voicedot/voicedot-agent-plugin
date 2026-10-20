@@ -1,7 +1,7 @@
 {
   "platform": "OpenAI",
   "status": "non-submitted",
-  "why": "Prepare the VoiceDot 0.3.0 public submission for Good Sheet Sp z o.o. with read access and optional resolving and replying. An existing 0.1.1 draft was inspected; no new upload or submission was made.",
+  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the current 29-tool contract, dedicated sample-data demo account, and actual ChatGPT acceptance. No upload or submission of this candidate has occurred.",
   "pageOrSourceBlocker": {
     "kind": "verified-page",
     "source": "https://developers.openai.com/plugins/deploy/submission",
@@ -9,9 +9,9 @@
   },
   "fields": [
     {
-      "name": "MCP project creation and widget installation",
-      "status": "production-verified",
-      "reason": "Existing-account creation and installation tools are deployed. Active backend/MCP catalogs expose all three tools, the idempotency migration is applied, runtime health passed, and 101 focused backend tests plus package CI passed. Existing grants retain their old scopes; the owner must enable projects:create in Manage access and run the website flow. New-account onboarding is deferred. Reviewer creation access and the real demo remain pending."
+      "name": "Current runtime contract and account setup",
+      "status": "candidate-prepared",
+      "reason": "The package mirrors the 29-tool runtime contract and knowledge 2026-10-20.1. Setup, addresses, handovers and human review are documented; fresh authenticated reviewer acceptance remains pending."
     },
     {
       "name": "listing, logo, skills, starter prompts, country availability and release notes",
@@ -21,12 +21,12 @@
     {
       "name": "eight review test cases",
       "status": "draft-unrun",
-      "reason": "Five positive and three negative cases use English Atlas Checkout. Real reviewer OAuth succeeded with six scopes; authenticated clean-client case replays and a real demo video remain pending."
+      "reason": "Five positive and three negative cases use Harbor Notes and Fieldwork Notes. They require a dedicated ordinary demo account with sample data. Fresh ChatGPT desktop and native mobile runs remain pending."
     },
     {
       "name": "public website, support and privacy content",
-      "status": "production-verified",
-      "reason": "Website PRs #14 and #15 are deployed. Public listing URLs, direct support contact, optional MCP actions, data-sharing disclosure and the September 29, 2026 privacy update date were verified. The future site replacement needs the same disclosure."
+      "status": "fresh-check-pending",
+      "reason": "Fresh public-content and user-agent checks are required for the current listing URLs. Historical deployment evidence does not replace this acceptance."
     },
     {
       "name": "business identity and portal access",
@@ -36,7 +36,7 @@
     {
       "name": "OAuth and domain challenge",
       "status": "verification-pending",
-      "reason": "The protected MCP URL and OAuth were entered in the existing draft. Real reviewer OAuth succeeded in Codex CLI. Final saved portal configuration, domain ownership verification and the tool scan remain pending."
+      "reason": "Current OAuth browser acceptance, exact domain challenge, saved portal configuration and tool scans remain pending."
     },
     {
       "name": "final attestation",
@@ -66,7 +66,7 @@
   ],
   "result": {
     "status": "blocked",
-    "claim": "Preparation only. Owner explicitly holds submission and publication until MCP project creation and widget installation are complete; no final upload or submission has been made."
+    "claim": "Preparation only. Reviewer setup, real ChatGPT acceptance, domain verification, a public demo video and owner attestations remain open. Nothing has been sent for review."
   },
-  "recovery": "Complete the requested project-creation workflow, entitlement and OAuth checks, safe reviewer access and real client replays. Update truthful listing, cases, release notes and policy coverage, then help the owner record the final video and complete private/legal fields. Keep submission on hold until the requested feature is verified."
+  "recovery": "Complete dedicated demo data, current OAuth and desktop/mobile case runs, domain verification and portal scans; record the actual video; let the owner enter credentials and attestations. Submit only after the owner explicitly instructs it."
 }

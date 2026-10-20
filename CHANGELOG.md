@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 - 2026-10-20
+
+- Mirror all 29 current MCP tools with exact schemas, scopes and annotations; derive submission flags from the mirror and detect runtime drift.
+- Update the skill for project addresses, Team/Public handovers, human review rounds, live permissions and confirmed reply retries.
+- Document separate CLI v2 account setup, human identity verification and first feedback.
+- Replace historical review cases with Harbor Notes and Fieldwork Notes; keep the authorized reply rehearsal separate.
+- Keep submission pending actual reviewer, desktop/mobile, video, domain and portal acceptance.
+
 ## 0.3.0 - 2026-10-07
 
 - Describe creating a project in an existing owned workspace with the separate `projects:create` permission, durable retry protection, and widget installation verification for an exact HTTPS origin and port (`create_project`, `get_project_installation`, `get_project_installation_status`).
