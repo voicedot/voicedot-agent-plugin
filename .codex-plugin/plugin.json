@@ -40,7 +40,7 @@
               "tools_triggered": "search_pins with fields=full, or search_pins followed by get_pin_thread when the search result lacks full thread history",
               "expected_behavior": "Show the original contrast note, its page context, and the team reply about making the button darker, in chronological order.",
               "file_attachment_urls": [
-                "https://github.com/piotrsynowiec/voicedot-review-demo/archive/55eea1b2bd3fb37fb6aa01e82de5b21484089b47.zip"
+                "https://github.com/piotrsynowiec/voicedot-review-demo/archive/795ea37df4a9f9c654286dd5ac1c6e13311ae2fd.zip"
               ]
             },
             {
@@ -50,10 +50,10 @@
               "expected_behavior": "Show the offline-headline conversation and team note requesting a headline under eight words. Do not expose the other conversation, which has not been handed over."
             },
             {
-              "description": "Inspect the open human review round.",
-              "prompt": "Show the open review round in Harbor Notes and what is left to check.",
+              "description": "Inspect the latest human review round and its recorded decision.",
+              "prompt": "Show the latest review round in Harbor Notes and its review decisions.",
               "tools_triggered": "list_review_rounds, get_review_round",
-              "expected_behavior": "Show Homepage fixes, with the Start a workspace button checked and the headline still awaiting human review. Do not check either item as the agent."
+              "expected_behavior": "Show Homepage fixes for the deployed Start a workspace button contrast change on https://review.voicedot.ai. The single item was checked by the human, the round is completed, and its linked pin thread is resolved and closed. Report the recorded decision without changing it or checking any item as the agent."
             }
           ],
           "negative": [
