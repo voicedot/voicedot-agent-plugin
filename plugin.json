@@ -67,7 +67,7 @@
               "tools_triggered": "search_pins with fields=full, or search_pins followed by get_pin_thread when the search result lacks full thread history",
               "expected_behavior": "Show the original contrast note, its page context, and the team reply about making the button darker, in chronological order.",
               "file_attachment_urls": [
-                "https://github.com/piotrsynowiec/voicedot-review-demo/archive/7eb77c39e8f44a3f0aeeb67082beba088934f706.zip"
+                "https://github.com/piotrsynowiec/voicedot-review-demo/archive/55eea1b2bd3fb37fb6aa01e82de5b21484089b47.zip"
               ]
             },
             {

@@ -5,7 +5,7 @@ To scenariusz, nie dowód testu ani gotowy film. Najpierw operator przechodzi pr
 ## Przed nagraniem
 
 - Repo strony: https://github.com/piotrsynowiec/voicedot-review-demo — branch review.
-- Adres kodowanej strony: https://review.voicedot.ai/. Najpierw potwierdzić DNS, HTTPS, działający widget i zgodny deployment.json; samo zapisanie adresu nie wystarcza.
+- Adres kodowanej strony: https://review.voicedot.ai/. DNS, wymuszone HTTPS, rzeczywisty ping widgetu i zgodny deployment.json potwierdzono 21.10. Bazowy commit do nagrania: 55eea1b2bd3fb37fb6aa01e82de5b21484089b47. Techniczna próba pusha i powrotu do bazowej wersji przeszła; pierwszy feedback z nowego adresu i Checked nadal należą do Piotra.
 - Stałe przykłady przeglądarkowe pozostają pod https://app.voicedot.ai/reviewer/demo/harbor-notes/ i https://app.voicedot.ai/reviewer/demo/fieldwork-notes/.
 - Połączyć aktualną prywatną instalację wtyczki z dedykowanym kontem; weryfikację hasła i OAuth wykonać poza nagraniem.
 - Operator sprawdza czysty branch review, wersję początkową, Actions i ograniczony zapis Git. Dane dostępowe tylko w systemowym magazynie i prywatnym formularzu OpenAI, nigdy w komendach, repo ani kadrze filmu.

@@ -66,7 +66,7 @@
   ],
   "result": {
     "status": "blocked",
-    "claim": "No review submission. Existing OAuth/domain/scans and ChatGPT evidence are recorded separately. The coding demo source and Pages pipeline exist, but DNS/HTTPS, restricted reviewer Git access, full rehearsal, native mobile, the verified recording URL and private owner fields remain gates. New local package changes do not replace the saved portal draft."
+    "claim": "No review submission. Existing OAuth/domain/scans and ChatGPT evidence are recorded separately. The separate coding demo has verified DNS/HTTPS, a real accepted widget ping, and an operator push/deploy/reset rehearsal with a cache-consistency fix. Restricted reviewer Git access, the human feedback-to-Checked cycle, native mobile, the verified recording URL and private owner fields remain gates. New local package changes do not replace the saved portal draft."
   },
   "recovery": "Complete remaining evidence and human actions, add and verify the recording, rebuild and inspect the final ZIP, replace the same saved draft while preserving its identity and MCP binding, recheck portal findings, and obtain owner attestations. Submit only after Piotr explicitly says wy\u015blij."
 }
