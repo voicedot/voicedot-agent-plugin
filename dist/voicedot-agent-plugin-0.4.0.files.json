@@ -3,8 +3,8 @@
   "files": [
     {
       "path": ".codex-plugin/plugin.json",
-      "bytes": 6235,
-      "sha256": "fc9d66bda4c51dfeb3398b8ff06fd9016f561d5cdf0503f9db6ca4ce53fca546"
+      "bytes": 6322,
+      "sha256": "3083e733c0b70cf52814292d155005e97503b959bca3bebe6575d95e119c710f"
     },
     {
       "path": ".mcp.json",
@@ -33,8 +33,8 @@
     },
     {
       "path": "adapters/claude-code/skills/review-voicedot-feedback/SKILL.md",
-      "bytes": 7228,
-      "sha256": "99feee2f46e7b59cdecb9e5b151f26a6f1fe7ddd07c4baa632e48606f14e377d"
+      "bytes": 7554,
+      "sha256": "b9f7aaf6a858a65e85080031b504d75315a10f3c53237c3025a7b8f066753dbf"
     },
     {
       "path": "assets/icon.png",
@@ -48,8 +48,8 @@
     },
     {
       "path": "contract/agent-guide.md",
-      "bytes": 16349,
-      "sha256": "eb4495a4ba5151b0f876f31650843a3e0df692436c9ec3c21fbe40cd3826a56d"
+      "bytes": 16383,
+      "sha256": "4daa842bfd52f26f161fa7386414164d897f5c2f37e7a53ae81c1c74e262ab14"
     },
     {
       "path": "contract/knowledge/en/address_modes.md",
@@ -109,12 +109,12 @@
     {
       "path": "contract/source.json",
       "bytes": 2843,
-      "sha256": "382f95402c0d6d78b70f8a9a7edc86bca729068fe85ab4ca04005d6cff7cbaef"
+      "sha256": "e4b8dd3e449e2a8241746a85304ed2e908324c2b93bc6a6f2284d37c966b3897"
     },
     {
       "path": "contract/voicedot-mcp-contract.json",
-      "bytes": 83754,
-      "sha256": "ababa1ce9d89e1937dad1dea50dd2e2ce734665e63a839a52b39c22fafc4ab0a"
+      "bytes": 85817,
+      "sha256": "2daf91658a4c0c0ac7faa1afefb4a787be0e6306e965705a1cb70cb2d3ee4f57"
     },
     {
       "path": "LICENSE",
@@ -128,8 +128,8 @@
     },
     {
       "path": "plugin.json",
-      "bytes": 6358,
-      "sha256": "cbc8db0360f53aa1ecc8f8763f3c17fd4a9ac46b18d4ebea7e6d3988ba6a479b"
+      "bytes": 6445,
+      "sha256": "02b6015582432faedfb8bf14e751052bd0840f25022ef23c6b10a3b1f1a7d28d"
     },
     {
       "path": "README.md",
@@ -148,8 +148,8 @@
     },
     {
       "path": "skills/review-voicedot-feedback/SKILL.md",
-      "bytes": 7228,
-      "sha256": "99feee2f46e7b59cdecb9e5b151f26a6f1fe7ddd07c4baa632e48606f14e377d"
+      "bytes": 7554,
+      "sha256": "b9f7aaf6a858a65e85080031b504d75315a10f3c53237c3025a7b8f066753dbf"
     }
   ]
 }

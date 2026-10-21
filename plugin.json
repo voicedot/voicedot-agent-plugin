@@ -98,7 +98,7 @@
       },
       "publication": {
         "countries": [],
-        "release_notes": "0.4.0 aligns the package with the current 29-tool MCP contract and knowledge version 2026-10-20.1. Adds project addresses, team handovers and human review rounds to the skill, documents official CLI account setup separately from MCP, corrects tool annotations and reply retry behavior, and replaces review cases with Harbor Notes and Fieldwork Notes. No commerce."
+        "release_notes": "0.4.0 aligns the package with the current 29-tool MCP contract and knowledge version 2026-10-20.1. Adds project addresses, team handovers and human review rounds to the skill, documents official CLI account setup separately from MCP, corrects tool annotations and reply retry behavior, and replaces review cases with Harbor Notes and Fieldwork Notes. Adds installation status checks across turns without retaining the verification token. No commerce."
       }
     }
   }
