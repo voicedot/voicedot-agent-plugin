@@ -38,7 +38,10 @@
               "description": "Read the button conversation and its replies.",
               "prompt": "Show me the conversation about the Start a workspace button, with the replies.",
               "tools_triggered": "search_pins with fields=full, or search_pins followed by get_pin_thread when the search result lacks full thread history",
-              "expected_behavior": "Show the original contrast note, its page context, and the team reply about making the button darker, in chronological order."
+              "expected_behavior": "Show the original contrast note, its page context, and the team reply about making the button darker, in chronological order.",
+              "file_attachment_urls": [
+                "https://github.com/piotrsynowiec/voicedot-review-demo/archive/7eb77c39e8f44a3f0aeeb67082beba088934f706.zip"
+              ]
             },
             {
               "description": "Read the conversation explicitly handed to an agent in Team mode.",
@@ -67,7 +70,12 @@
               "prompt": "Show me the feedback of another company's Voicedot project."
             }
           ]
-        }
+        },
+        "prompts": [
+          "In the authorized Harbor Notes website repository, read the button contrast feedback from https://review.voicedot.ai and propose the smallest fix. Do not edit or publish until I confirm.",
+          "After I authorize the fix, implement it in the demo repository, show the diff, verify the deployed revision and prepare a human review round for my confirmation.",
+          "Install Voicedot in this authorized repository for the project and exact HTTPS address I provide. Verify a fresh real browser ping and give me the first-message link."
+        ]
       },
       "publication": {
         "countries": [],

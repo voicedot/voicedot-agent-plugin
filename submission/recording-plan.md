@@ -1,11 +1,35 @@
-# Nagranie 0.4.0 — rzeczywisty przebieg w ChatGPT
+# Nagranie 0.4.0 — ChatGPT oraz pełny cykl Codexa
 
-To plan, nie dowód testu. Nagrywaj dopiero po przejściu prób na aktualnym koncie demo. Nie pokazuj hasła, tokenów, skrzynki ani ustawień serwera. Dane przykładowe: Harbor Notes (Private) i Fieldwork Notes (Team).
+To scenariusz, nie dowód testu ani gotowy film. Najpierw operator przechodzi próby i przygotowuje powtarzalną wersję początkową. Hasła, tokeny, poczta i ustawienia serwerów pozostają poza nagraniem. Dane fikcyjne: Harbor Notes oraz Fieldwork Notes. Podstawowe testy działają na gotowym koncie demo; kodowanie wymaga otwarcia osobnego repo w uprawnionym środowisku agenta.
 
-1. Pokaż połączoną wtyczkę w ChatGPT i kolejno pięć promptów pozytywnych z `plugin.json`: projekty, otwarte uwagi Harbor, rozmowa o Start a workspace, przekazanie Fieldwork, runda Homepage fixes.
-2. Pokaż rzeczywisty wynik: zamknięta rozmowa Help pominięta, nieprzekazana rozmowa Fieldwork niewidoczna, przycisk Checked i nagłówek oczekujący w rundzie.
-3. Osobny zapis: “Reply to the visitor in the conversation about the phone spacing: Thanks, we added more space above the footer.” Pokaż dokładny podgląd. Dopiero po osobnym “Yes, send exactly this reply.” pokaż wysłanie i zapis w wątku. Nie odpowiadaj w zamkniętej rozmowie Help.
-4. Pokaż trzy przypadki negatywne z `plugin.json`: haiku bez narzędzi, odmowa usunięcia, odmowa dostępu do cudzych projektów.
-5. Jeśli prezentujesz instalację lub CLI, oznacz je jako osobny przepływ agenta programującego. Nie przedstawiaj rejestracji jako narzędzia MCP; zachowaj weryfikację człowieka i jego pierwszą uwagę.
+## Przed nagraniem
 
-Odtwórz nagranie po zapisie. Udostępnij pod adresem dostępnym bez logowania i sprawdź go w takiej sesji. Dopiero rzeczywisty URL trafi do formularza. Próba na telefonie wymaga aplikacji ChatGPT iOS/Android; responsywny Chrome jej nie zastępuje.
+- Repo strony: https://github.com/piotrsynowiec/voicedot-review-demo — branch review.
+- Adres kodowanej strony: https://review.voicedot.ai/. Najpierw potwierdzić DNS, HTTPS, działający widget i zgodny deployment.json; samo zapisanie adresu nie wystarcza.
+- Stałe przykłady przeglądarkowe pozostają pod https://app.voicedot.ai/reviewer/demo/harbor-notes/ i https://app.voicedot.ai/reviewer/demo/fieldwork-notes/.
+- Połączyć aktualną prywatną instalację wtyczki z dedykowanym kontem; weryfikację hasła i OAuth wykonać poza nagraniem.
+- Operator sprawdza czysty branch review, wersję początkową, Actions i ograniczony zapis Git. Dane dostępowe tylko w systemowym magazynie i prywatnym formularzu OpenAI, nigdy w komendach, repo ani kadrze filmu.
+
+## Część 1 — feedback do wdrożonej zmiany w Codexie
+
+1. Pokaż stronę i początkowy jasny przycisk Start a workspace. Sam przypnij i wyślij uwagę: “Please make the Start a workspace button easier to read by using a darker green.” Pierwszą uwagę na nowym adresie wysyła człowiek.
+2. W Codexie otwórz repo strony. Prompt: “Read the feedback in Harbor Notes from https://review.voicedot.ai about Start a workspace. Show the page context and propose the smallest fix. Do not edit or publish yet.” Pokaż odczytaną rzeczywistą uwagę.
+3. Po obejrzeniu propozycji: “Implement that button contrast fix in this repository, verify it, commit and push to review. You may deploy this demo website. Keep other feedback open.” Pokaż diff i prawdziwy push.
+4. Pokaż zielone Publish review website w Actions. Porównaj commit w deployment.json i stopce strony z wypchniętym SHA. Otwórz stronę i pokaż faktyczny ciemniejszy przycisk.
+5. Prompt: “Prepare a review round for this deployed button fix. Include the exact page, feedback thread and what I should check.” Pokaż podgląd; dopiero po osobnym potwierdzeniu utwórz rundę. Otwórz zwrócony link i osobiście oznacz Checked albo Needs fix.
+6. Nie przedstawiaj MCP jako narzędzia edytującego pliki lub wykonującego git push. Robi to uprawniony host Codex; MCP dostarcza uwagi, kontekst oraz zapisuje rundę po zgodzie.
+
+## Część 2 — pięć pozytywnych i trzy negatywne przypadki
+
+1. W ChatGPT pokaż połączoną wtyczkę i pięć promptów z plugin.json: projekty, otwarte Harbor feedback, rozmowa o przycisku z odpowiedzią, przekazanie Fieldwork, stan istniejącej rundy Homepage fixes. Operator musi wcześniej przygotować prawdziwe zmiany i osobiste Checked, które odpowiadają oczekiwaniom paczki.
+2. Pokaż rzeczywisty wynik: Help pominięty w otwartych, nieprzekazana rozmowa Fieldwork niewidoczna, faktycznie sprawdzony przycisk i nagłówek oczekujący. Nie fabrykuj stanu tylko dla nagrania.
+3. Odpowiedź w otwartym wątku wymaga dokładnego podglądu i osobnego “Yes, send exactly this reply.” Treść może stwierdzać wdrożenie tylko po faktycznym wdrożeniu. Operator sprawdza powtórzenie tym samym tokenem w ciągu 10 minut i jedną zapisaną odpowiedź; token poza kadrem. Nie otwieraj Help odpowiedzią.
+4. Pokaż trzy granice z plugin.json: haiku bez narzędzi VoiceDot, odmowa usunięcia i odmowa dostępu do cudzych projektów.
+
+## Część 3 — instalacja i osobne CLI
+
+Jeśli pokazujesz instalację, agent instaluje snippet raz, otwiera dokładny autoryzowany HTTPS adres i pokazuje readyForFeedback=true po prawdziwym pingu. Rejestrację CLI przedstaw osobno od MCP. Zachowaj zgodę i weryfikację człowieka, jego pierwszą wiadomość oraz wybór planu. Nie pokazuj sekretów lub linków uwierzytelniających.
+
+## Po nagraniu
+
+Odtwórz film i sprawdź czytelność, prawdziwe wyniki oraz brak sekretów. Udostępnij pod adresem dostępnym recenzentowi bez dodatkowego logowania; operator sprawdza odtwarzanie. Dopiero rzeczywisty URL trafia do review.demo_recording_url i końcowej paczki. Telefon wymaga natywnej aplikacji ChatGPT iOS/Android; emulacja przeglądarki nie zalicza tego kroku. Piotr uzupełnia dane prywatne i atestacje. Zgłoszenie dopiero po dosłownym „wyślij”.
