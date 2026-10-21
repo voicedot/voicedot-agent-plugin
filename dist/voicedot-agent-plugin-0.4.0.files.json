@@ -33,8 +33,8 @@
     },
     {
       "path": "adapters/claude-code/skills/review-voicedot-feedback/SKILL.md",
-      "bytes": 7554,
-      "sha256": "b9f7aaf6a858a65e85080031b504d75315a10f3c53237c3025a7b8f066753dbf"
+      "bytes": 7518,
+      "sha256": "f64290ae0f35187250ecf6e27fd79a4f3794ef49da3fc0e883f8ba5e4328d8de"
     },
     {
       "path": "assets/icon.png",
@@ -48,8 +48,8 @@
     },
     {
       "path": "contract/agent-guide.md",
-      "bytes": 16383,
-      "sha256": "4daa842bfd52f26f161fa7386414164d897f5c2f37e7a53ae81c1c74e262ab14"
+      "bytes": 16362,
+      "sha256": "11b7b549776f7174f0355d139f4357261362d3e5b1dff6f275786bfed267b75b"
     },
     {
       "path": "contract/knowledge/en/address_modes.md",
@@ -109,12 +109,12 @@
     {
       "path": "contract/source.json",
       "bytes": 2843,
-      "sha256": "e4b8dd3e449e2a8241746a85304ed2e908324c2b93bc6a6f2284d37c966b3897"
+      "sha256": "0f5eaf2e3834c32b1898f6c2ea2b157ca816a114a69597266ce6b3647f4eaee7"
     },
     {
       "path": "contract/voicedot-mcp-contract.json",
-      "bytes": 85817,
-      "sha256": "2daf91658a4c0c0ac7faa1afefb4a787be0e6306e965705a1cb70cb2d3ee4f57"
+      "bytes": 85915,
+      "sha256": "534ef680d8c2cb9dfe9f832af2f8948af7ba92026e8b3b51154304753c065935"
     },
     {
       "path": "LICENSE",
@@ -148,8 +148,8 @@
     },
     {
       "path": "skills/review-voicedot-feedback/SKILL.md",
-      "bytes": 7554,
-      "sha256": "b9f7aaf6a858a65e85080031b504d75315a10f3c53237c3025a7b8f066753dbf"
+      "bytes": 7518,
+      "sha256": "f64290ae0f35187250ecf6e27fd79a4f3794ef49da3fc0e883f8ba5e4328d8de"
     }
   ]
 }
