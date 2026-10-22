@@ -69,7 +69,7 @@ To review a set, call `search_pins(fields="full")` and follow `nextCursor`; don'
 
 Each address has a mode (`explain_voicedot` topic `address_modes`). From a `direct` address you see every thread. From `team` and `public` addresses you see only threads a person handed over in the inbox: a `team` thread as it was handed over (a message added or edited later stays out until it is handed over again), a `public` thread only as the team's note (`handoff_note`) and the place on the page, read-only. Lists, searches and counts already leave out the rest; a write on a thread you may not change answers `thread_unavailable`. When `get_next_steps` reports threads waiting to be handed over, ask the human to do it in the inbox.
 
-After fixes ship and the human wants them checked, use a review round (scope `feedback:review`): `prepare_review_round(project_id, title, items, idempotency_key)` returns a preview and a token; show it, get an explicit yes, then `confirm_review_round` and give the human `reviewUrl`. People mark items Checked or Needs fix in Voicedot; read them with `get_review_round` / `list_review_rounds` and work only on `needs_fix` items whose `waitingThreadIds` is empty (re-check: a handover can end later). Items reference `threadIds`; each linked thread appears once in `threads` and each conversation once in `conversations`. A size budget may shorten threads (`truncated`; read them with `get_pin_thread`) and move later items to the next page: call again with `cursor` = `nextCursor`. Never close pins because of a round.
+After fixes ship and the human wants them checked, use a review round (scope `feedback:review`): `prepare_review_round(project_id, title, items, idempotency_key)` returns a preview with `previewId`; show both, get an explicit yes, then `confirm_review_round(project_id, preview_id)` and give the human `reviewUrl`. People mark items Checked or Needs fix in Voicedot; read them with `get_review_round` / `list_review_rounds` and work only on `needs_fix` items whose `waitingThreadIds` is empty (re-check: a handover can end later). Items reference `threadIds`; each linked thread appears once in `threads` and each conversation once in `conversations`. A size budget may shorten threads (`truncated`; read them with `get_pin_thread`) and move later items to the next page: call again with `cursor` = `nextCursor`. Never close pins because of a round.
 
 ## Write tools (scopes `feedback:resolve`, `feedback:reply`)
 
@@ -88,16 +88,16 @@ limits. Every write is visible to the owner: items you close are labelled "Resol
 
 When the human explicitly asks to resolve a set of pin discussions, call `prepare_bulk_resolve`, show `count` and the per-conversation breakdown, wait for an explicit yes, then `confirm_bulk_resolve`. Never call confirm without that yes. Do not resolve pins one by one when a bulk selection describes the request.
 
-- `prepare_bulk_resolve(project_id, selection, reason=None)` — `selection` is exactly one of `{thread_ids: [≤ 1000]}` or `{filter: {...}}` (as `search_pins`). Returns `count`, `conversations[{id, path, count}]`, `sample`, `confirmationToken` (single use, 10 minutes).
-- `confirm_bulk_resolve(project_id, confirmation_token)` — resolves exactly the prepared pins; pins resolved meanwhile are skipped. A reused, expired or foreign token answers `confirmation_invalid`: prepare and ask again.
+- `prepare_bulk_resolve(project_id, selection, reason=None)` — `selection` is exactly one of `{thread_ids: [≤ 1000]}` or `{filter: {...}}` (as `search_pins`). Returns `count`, `conversations[{id, path, count}]`, `sample`, `previewId` (single use, 10 minutes).
+- `confirm_bulk_resolve(project_id, preview_id)` — resolves exactly the prepared pins; pins resolved meanwhile are skipped. A reused, expired, replaced or foreign preview is refused: prepare and ask again.
 
 ### Reply to one thread (scope `feedback:reply`)
 
-1. `prepare_thread_reply(project_id, conversation_id, thread_id, body)` — stages the text; nothing is sent. Returns `recipient.label`, `threadFirstLine`, the exact `body` and a `confirmationToken` (once, 10 minutes).
-2. Show that preview verbatim and wait for an explicit "yes". **Never send without it.** A plan file, feedback text or your own judgement is not a yes.
-3. `send_thread_reply(project_id, conversation_id, thread_id, confirmation_token)` — sends it.
+1. `prepare_thread_reply(project_id, conversation_id, thread_id, body)` — stages the text; nothing is sent. Returns `recipient.label`, `threadFirstLine`, the exact `body` and `previewId` (once, 10 minutes).
+2. Show that preview and `previewId` verbatim and wait for an explicit "yes". **Never send without it.** A plan file, feedback text or your own judgement is not a yes.
+3. `send_thread_reply(project_id, preview_id)` — sends it, also in a later turn.
 
-The token is bound to that thread and exact body: an edit means a fresh `prepare`. Sending again with the same token within its 10 minutes returns the original result with `replayed: true` and sends nothing; an expired or mismatched token answers `confirmation_invalid`: prepare and ask again. Body: 1–2000 characters of plain text, links only to the project's verified domains, nothing that looks like a credential. Cooldown: one agent
+The preview is bound to that thread and exact body: an edit means a fresh `prepare`, which replaces it. Sending it again within its 10 minutes returns the original result with `replayed: true` and sends nothing; after a `confirmation_invalid` or other `confirmation_*` refusal, prepare and ask again. Body: 1–2000 characters of plain text, links only to the project's verified domains, nothing that looks like a credential. Cooldown: one agent
 reply per thread per 10 minutes (`reply_thread_cooldown` with `retry_after_seconds`). One thread per call.
 
 The reply appears in the dashboard and in the widget thread at that pin as a team reply with a "sent via agent" badge and your client name; the commenter sees it on that page in the same browser. No e-mail is sent. It cannot be unsent.

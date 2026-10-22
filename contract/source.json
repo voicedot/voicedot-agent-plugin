@@ -1,11 +1,11 @@
 {
   "repository": "https://github.com/piotrsynowiec/voicedot",
-  "commit": "f5761ee26c3a27b2f831b9ebb9dff31f5baab440",
+  "commit": "10f17ead9e5349d21502cc10462c0481718111e4",
   "path": "integrations/mcp/contract/voicedot-mcp-contract.json",
-  "sha256": "534ef680d8c2cb9dfe9f832af2f8948af7ba92026e8b3b51154304753c065935",
+  "sha256": "8f14a2d940c029c87952fc224b5e82ef4115c86154118ba314c18ab7e85de6f3",
   "guide": {
-    "bytes": 16362,
-    "sha256": "11b7b549776f7174f0355d139f4357261362d3e5b1dff6f275786bfed267b75b",
+    "bytes": 16368,
+    "sha256": "d69bb9cf8c79605e6ce26dd729c51eaebb17482c7dd23f635cd07df452900ec1",
     "uri": "voicedot://guide"
   },
   "knowledge": {

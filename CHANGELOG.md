@@ -1,9 +1,10 @@
 # Changelog
 
-## 0.4.0 - 2026-10-20
+## 0.4.0 - unreleased
 
 - Prepare a new owner-authorized OpenAI draft with the portable `voicedot` identity and explicit OAuth DCR; preserve the older unsubmitted entry separately.
 
+- Add visible preview references for confirmed replies, review rounds and bulk resolutions across turns; preserve exact content, latest-preview checks and safe reply retries.
 - Mirror all 29 current MCP tools with exact schemas, scopes and annotations; derive submission flags from the mirror and detect runtime drift.
 - Update the skill for project addresses, Team/Public handovers, human review rounds, live permissions and confirmed reply retries.
 - Document separate CLI v2 account setup, human identity verification and first feedback.

@@ -3,8 +3,8 @@
   "files": [
     {
       "path": ".codex-plugin/plugin.json",
-      "bytes": 7280,
-      "sha256": "1a1e0c3b5d93ba29516ba28184b193135d28d60757c8c38f18b4b88cd03e24cb"
+      "bytes": 7399,
+      "sha256": "8a83ae6799074d4da7cd162f561f6bbec91f2b3c0e8127ccbeed0b114fc36738"
     },
     {
       "path": ".mcp.json",
@@ -28,13 +28,13 @@
     },
     {
       "path": "adapters/claude-code/skills/review-voicedot-feedback/references/tool-and-workflow-reference.md",
-      "bytes": 2131,
-      "sha256": "8262952614bacdcf7cd0cb2a6a442f1bb257fbdf8ab84dd27d495c83928b8411"
+      "bytes": 2888,
+      "sha256": "247d02951b4004639c4bd8750961849cb03d9233ce8a2fbdb5a85ca5de36f85f"
     },
     {
       "path": "adapters/claude-code/skills/review-voicedot-feedback/SKILL.md",
-      "bytes": 7518,
-      "sha256": "f64290ae0f35187250ecf6e27fd79a4f3794ef49da3fc0e883f8ba5e4328d8de"
+      "bytes": 9460,
+      "sha256": "3c700d8632a62ad03d0d3cf92001d3a6100a758bba1abae03fb301b677a0684e"
     },
     {
       "path": "assets/icon.png",
@@ -43,13 +43,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1864,
-      "sha256": "9e8d8a003305b7a0bf7ef80a9c6b07b0270f79dba3c0d3c39ad305e0c3b9a848"
+      "bytes": 2039,
+      "sha256": "d78339ee39834d85024b2a8280fce11265c235711749c0da6b84aca061382f6b"
     },
     {
       "path": "contract/agent-guide.md",
-      "bytes": 16362,
-      "sha256": "11b7b549776f7174f0355d139f4357261362d3e5b1dff6f275786bfed267b75b"
+      "bytes": 16368,
+      "sha256": "d69bb9cf8c79605e6ce26dd729c51eaebb17482c7dd23f635cd07df452900ec1"
     },
     {
       "path": "contract/knowledge/en/address_modes.md",
@@ -109,12 +109,12 @@
     {
       "path": "contract/source.json",
       "bytes": 2843,
-      "sha256": "0f5eaf2e3834c32b1898f6c2ea2b157ca816a114a69597266ce6b3647f4eaee7"
+      "sha256": "c06d05dcb1278f271c8ab638838d1a02f1574cf0e9cf837c81ca57a5617a465e"
     },
     {
       "path": "contract/voicedot-mcp-contract.json",
-      "bytes": 85915,
-      "sha256": "534ef680d8c2cb9dfe9f832af2f8948af7ba92026e8b3b51154304753c065935"
+      "bytes": 89406,
+      "sha256": "8f14a2d940c029c87952fc224b5e82ef4115c86154118ba314c18ab7e85de6f3"
     },
     {
       "path": "LICENSE",
@@ -128,8 +128,8 @@
     },
     {
       "path": "plugin.json",
-      "bytes": 7403,
-      "sha256": "5890958f263329cb0d72843647e3dac70650f4a78a37d3482a846fff8b788e91"
+      "bytes": 7522,
+      "sha256": "aac5d76e73a063a2b5b3aa15d247a11322ea0ce0101d49d75c0199fde5f8f0aa"
     },
     {
       "path": "README.md",
@@ -143,13 +143,13 @@
     },
     {
       "path": "skills/review-voicedot-feedback/references/tool-and-workflow-reference.md",
-      "bytes": 2131,
-      "sha256": "8262952614bacdcf7cd0cb2a6a442f1bb257fbdf8ab84dd27d495c83928b8411"
+      "bytes": 2888,
+      "sha256": "247d02951b4004639c4bd8750961849cb03d9233ce8a2fbdb5a85ca5de36f85f"
     },
     {
       "path": "skills/review-voicedot-feedback/SKILL.md",
-      "bytes": 7518,
-      "sha256": "f64290ae0f35187250ecf6e27fd79a4f3794ef49da3fc0e883f8ba5e4328d8de"
+      "bytes": 9460,
+      "sha256": "3c700d8632a62ad03d0d3cf92001d3a6100a758bba1abae03fb301b677a0684e"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "platform": "OpenAI",
   "status": "non-submitted",
-  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the 29-tool contract, dedicated demo account and an independent coding-demo repository. The saved portal draft contains the earlier ZIP; the new coding prompts and source attachment are local changes. Nothing has been sent for review.",
+  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the current 29-tool production contract, dedicated demo account and independent coding-demo repository. Local previewId and result-copy changes are not yet in the saved portal draft. Nothing has been sent for review.",
   "pageOrSourceBlocker": {
     "kind": "verified-page",
     "source": "https://developers.openai.com/plugins/deploy/submission",
@@ -11,7 +11,7 @@
     {
       "name": "Current runtime contract and account setup",
       "status": "candidate-prepared",
-      "reason": "The package mirrors the 29-tool runtime contract and knowledge 2026-10-20.1. Setup, addresses, handovers and human review are documented; fresh authenticated reviewer acceptance remains pending."
+      "reason": "The package mirrors the 29-tool runtime at 10f17ead and knowledge 2026-10-20.1. A fresh Medium ChatGPT preview survived reload; separate human confirmation sent exactly one reply and a same-operation retry returned the original message without duplication. Remaining confirmation variants and saved-draft scans remain pending."
     },
     {
       "name": "listing, logo, skills, starter prompts, country availability and release notes",
@@ -21,7 +21,7 @@
     {
       "name": "eight review test cases",
       "status": "partially-run",
-      "reason": "Five positive and three negative cases target Harbor Notes and Fieldwork Notes. The six additional widget comments, three confirmed team replies and Help closure are verified. Team handover and hidden export are confirmed. Full case reruns, the real coding/review cycle, native mobile and remaining client checks still need evidence."
+      "reason": "Five positive and three negative cases passed in the previous ChatGPT rehearsal; reruns against the current contract remain separate. Demo widget comments, confirmed team replies and Help closure are verified. The actual human feedback-to-code-to-public-deployment-to-Checked cycle and restricted HTTPS Git push passed on 21 October. Fresh CLI signup, installation, human first feedback and human Free choice also passed. Native mobile and remaining client checks are pending."
     },
     {
       "name": "public website, support and privacy content",
@@ -66,7 +66,7 @@
   ],
   "result": {
     "status": "blocked",
-    "claim": "No review submission. Existing OAuth/domain/scans and ChatGPT evidence are recorded separately. The separate coding demo has verified DNS/HTTPS, a real accepted widget ping, and an operator push/deploy/reset rehearsal with a cache-consistency fix. Restricted reviewer Git access, the human feedback-to-Checked cycle, native mobile, the verified recording URL and private owner fields remain gates. New local package changes do not replace the saved portal draft."
+    "claim": "No review submission. The real coding/review cycle, restricted reviewer Git push, CLI setup and human Checked are verified. The 22 October Medium reply/retry acceptance passed with one stored reply. PreviewId negative variants, round/bulk acceptance, refreshed saved-draft scans, native mobile, a verified recording URL and private owner fields remain gates. New local package changes do not replace the saved portal draft."
   },
-  "recovery": "Complete remaining evidence and human actions, add and verify the recording, rebuild and inspect the final ZIP, replace the same saved draft while preserving its identity and MCP binding, recheck portal findings, and obtain owner attestations. Submit only after Piotr explicitly says wy\u015blij."
+  "recovery": "Complete remaining evidence and human actions, add and verify the recording, rebuild and inspect the final ZIP, replace the same saved draft while preserving its identity and MCP binding, recheck portal findings, and obtain owner attestations. Submit only after Piotr explicitly says wyślij."
 }

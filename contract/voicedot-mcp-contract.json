@@ -52,9 +52,29 @@
         "message": "The MCP safety-review limit has been reached."
       },
       {
+        "code": "confirmation_expired",
+        "dynamicMessage": false,
+        "message": "This preview has expired; previews last 10 minutes. Prepare it again, show the new preview and ask the person for a fresh yes."
+      },
+      {
         "code": "confirmation_invalid",
         "dynamicMessage": false,
-        "message": "That confirmation token is not valid. Prepare again and get a fresh human yes."
+        "message": "That previewId or confirmation token is not valid or was already used. Prepare again and get a fresh human yes."
+      },
+      {
+        "code": "confirmation_mismatch",
+        "dynamicMessage": false,
+        "message": "This preview belongs to another project, conversation, thread or connection, or to another token. Prepare it again here, show the new preview and ask the person for a fresh yes."
+      },
+      {
+        "code": "confirmation_required",
+        "dynamicMessage": false,
+        "message": "Name the prepared change with the previewId shown in its preview, or its confirmation token. If there is none, prepare it again and ask the person for a fresh yes."
+      },
+      {
+        "code": "confirmation_superseded",
+        "dynamicMessage": false,
+        "message": "A newer preview replaced this one, and only the newest preview can be confirmed. Confirm that one only after the person said yes to it; otherwise prepare again and ask for a fresh yes."
       },
       {
         "code": "connection_unavailable",
@@ -366,8 +386,8 @@
     "format": "<code>: <message>"
   },
   "guide": {
-    "bytes": 16362,
-    "sha256": "11b7b549776f7174f0355d139f4357261362d3e5b1dff6f275786bfed267b75b",
+    "bytes": 16368,
+    "sha256": "d69bb9cf8c79605e6ce26dd729c51eaebb17482c7dd23f635cd07df452900ec1",
     "uri": "voicedot://guide"
   },
   "knowledge": {
@@ -600,12 +620,32 @@
         "openWorldHint": false,
         "readOnlyHint": false
       },
-      "description": "Step 2 of 2. Resolve exactly the pins prepared by prepare_bulk_resolve, only after showing the count and breakdown to the human and getting an explicit yes. One call for the whole batch; pins resolved meanwhile are skipped; the owner can reverse it with Reopen on each pin in the Voicedot inbox. See voicedot://guide.",
+      "description": "Step 2 of 2. Resolve exactly the pins prepared by prepare_bulk_resolve, only after showing the count and breakdown to the human and getting an explicit yes. Name the preparation with preview_id (shown with the preview, so it also works in a later turn) or confirmation_token: it works once, for this connection, for 10 minutes, and only the project's newest bulk preview can be confirmed. One call for the whole batch; pins resolved meanwhile are skipped; the owner can reverse it with Reopen on each pin in the Voicedot inbox. See voicedot://guide.",
       "inputSchema": {
         "properties": {
           "confirmation_token": {
-            "title": "Confirmation Token",
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Confirmation Token"
+          },
+          "preview_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Preview Id"
           },
           "project_id": {
             "title": "Project Id",
@@ -613,8 +653,7 @@
           }
         },
         "required": [
-          "project_id",
-          "confirmation_token"
+          "project_id"
         ],
         "title": "confirm_bulk_resolveArguments",
         "type": "object"
@@ -632,12 +671,32 @@
         "openWorldHint": false,
         "readOnlyHint": false
       },
-      "description": "Step 2 of 2. Create the review round prepared by prepare_review_round, only after showing its preview to the human and getting an explicit yes. Returns reviewUrl to give the human. Creating it changes no pin and sends nothing to visitors; later, when people mark items Checked, the linked threads are resolved and their pins closed, and Needs fix reopens them. See voicedot://guide.",
+      "description": "Step 2 of 2. Create the review round prepared by prepare_review_round, only after showing its preview to the human and getting an explicit yes. Name it with preview_id (shown with the preview, so it also works in a later turn) or confirmation_token: it works for this connection for 10 minutes, and the same preview_id again returns the same round; only the project's newest round preview can be confirmed. Returns reviewUrl to give the human. Creating it changes no pin and sends nothing to visitors; later, when people mark items Checked, the linked threads are resolved and their pins closed, and Needs fix reopens them. See voicedot://guide.",
       "inputSchema": {
         "properties": {
           "confirmation_token": {
-            "title": "Confirmation Token",
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Confirmation Token"
+          },
+          "preview_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Preview Id"
           },
           "project_id": {
             "title": "Project Id",
@@ -645,8 +704,7 @@
           }
         },
         "required": [
-          "project_id",
-          "confirmation_token"
+          "project_id"
         ],
         "title": "confirm_review_roundArguments",
         "type": "object"
@@ -1350,7 +1408,7 @@
         "openWorldHint": false,
         "readOnlyHint": false
       },
-      "description": "Step 1 of 2, only when the human explicitly asks to resolve a set of pin discussions. Turn selection (exactly one of thread_ids ≤ 1000 or a search_pins-style filter; a filter path needs origin when the project has several addresses) into the still-open discussions, and return count, per-conversation breakdown, a sample and a single-use confirmation token. Nothing is resolved yet. See voicedot://guide.",
+      "description": "Step 1 of 2, only when the human explicitly asks to resolve a set of pin discussions. Turn selection (exactly one of thread_ids ≤ 1000 or a search_pins-style filter; a filter path needs origin when the project has several addresses) into the still-open discussions, and return count, per-conversation breakdown, a sample, a previewId to show the person and a single-use confirmation token. Nothing is resolved yet. See voicedot://guide.",
       "inputSchema": {
         "$defs": {
           "BulkResolveFilter": {
@@ -1729,7 +1787,7 @@
         "openWorldHint": false,
         "readOnlyHint": false
       },
-      "description": "Step 1 of 2, when fixes for feedback have shipped and the human wants them checked. Stage a review round: a checklist the human opens in Voicedot to mark each change checked or needs fix. Each item names its page, the pin thread_ids it addresses (zero or more), what changed and what to check, plus up to 5 links on the project's verified addresses. Returns a preview and a single-use confirmation token; nothing is created yet. Reusing the same idempotency_key returns the same round. See voicedot://guide.",
+      "description": "Step 1 of 2, when fixes for feedback have shipped and the human wants them checked. Stage a review round: a checklist the human opens in Voicedot to mark each change checked or needs fix. Each item names its page, the pin thread_ids it addresses (zero or more), what changed and what to check, plus up to 5 links on the project's verified addresses. Returns a preview with its previewId to show the person and a single-use confirmation token; nothing is created yet. Reusing the same idempotency_key returns the same round. See voicedot://guide.",
       "inputSchema": {
         "$defs": {
           "ReviewRoundItemInput": {
@@ -1873,7 +1931,7 @@
         "openWorldHint": false,
         "readOnlyHint": false
       },
-      "description": "Step 1 of 2. Validate and stage one reply to one pin thread and return the exact preview to show the human plus a single-use confirmation token. Nothing is sent yet. See voicedot://guide.",
+      "description": "Step 1 of 2. Validate and stage one reply to one pin thread. Returns the exact preview and its previewId to show the person, plus a single-use confirmation token for the same turn. Nothing is sent yet. See voicedot://guide.",
       "inputSchema": {
         "properties": {
           "body": {
@@ -2608,31 +2666,64 @@
         "openWorldHint": true,
         "readOnlyHint": false
       },
-      "description": "Step 2 of 2. Send the prepared reply to one pin thread, only after showing the preview to the human and getting an explicit yes. The commenter sees it in the Voicedot widget thread at that pin; no e-mail is sent. It cannot be unsent. The confirmation token works once and expires. If the result of a send is lost, call send_thread_reply again with the same token within its 10 minutes: it returns the original result with replayed: true and sends nothing. After that, read the thread with get_pin_thread before preparing again. See voicedot://guide.",
+      "description": "Step 2 of 2. Send the prepared reply to one pin thread, only after showing the preview to the human and getting an explicit yes. The commenter sees it in the Voicedot widget thread at that pin; no e-mail is sent. It cannot be unsent. Name the preview with preview_id (shown with the preview, so it also works in a later turn) or confirmation_token: it works once, for this connection, for 10 minutes, and only the thread's newest preview can be sent. With preview_id, conversation_id and thread_id are optional and must match it. If the result of a send is lost, call send_thread_reply again with the same preview_id or token within those 10 minutes: it returns the original result with replayed: true and sends nothing. After that, read the thread with get_pin_thread before preparing again. See voicedot://guide.",
       "inputSchema": {
         "properties": {
           "confirmation_token": {
-            "title": "Confirmation Token",
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Confirmation Token"
           },
           "conversation_id": {
-            "title": "Conversation Id",
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Conversation Id"
+          },
+          "preview_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Preview Id"
           },
           "project_id": {
             "title": "Project Id",
             "type": "string"
           },
           "thread_id": {
-            "title": "Thread Id",
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Thread Id"
           }
         },
         "required": [
-          "project_id",
-          "conversation_id",
-          "thread_id",
-          "confirmation_token"
+          "project_id"
         ],
         "title": "send_thread_replyArguments",
         "type": "object"

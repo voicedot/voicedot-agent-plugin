@@ -2,10 +2,14 @@
 
 To scenariusz, nie dowód testu ani gotowy film. Najpierw operator przechodzi próby i przygotowuje powtarzalną wersję początkową. Hasła, tokeny, poczta i ustawienia serwerów pozostają poza nagraniem. Dane fikcyjne: Harbor Notes oraz Fieldwork Notes. Podstawowe testy działają na gotowym koncie demo; kodowanie wymaga otwarcia osobnego repo w uprawnionym środowisku agenta.
 
+## Stan po zmianie kontraktu 22.10
+
+PreviewId jest wdrożony. 22.10 zaliczono w rzeczywistym ChatGPT Medium: podgląd → reload → osobna zgoda Piotra → jedna odpowiedź → retry bez duplikatu. Pozostałe warianty, runda/bulk i skany nie są przez to automatycznie zaliczone. Nowy film wymaga nowej uwagi człowieka; starego wyniku nie przedstawiać jako nowego przebiegu. Piotr nagrywa ekran, a lektor powstaje później przez ElevenLabs; narracja nie zastępuje wykonanych czynności.
+
 ## Przed nagraniem
 
 - Repo strony: https://github.com/piotrsynowiec/voicedot-review-demo — branch review.
-- Adres kodowanej strony: https://review.voicedot.ai/. DNS, wymuszone HTTPS, rzeczywisty ping widgetu i zgodny deployment.json potwierdzono 21.10. Bazowy commit do nagrania: 55eea1b2bd3fb37fb6aa01e82de5b21484089b47. Techniczna próba pusha i powrotu do bazowej wersji przeszła; pierwszy feedback z nowego adresu i Checked nadal należą do Piotra.
+- Adres kodowanej strony: https://review.voicedot.ai/. DNS, wymuszone HTTPS, rzeczywisty ping widgetu i zgodny deployment.json potwierdzono 21.10. Pełny cykl rzeczywistego feedbacku, poprawki, ograniczonego pusha, publicznego wdrożenia i osobistego Checked przeszedł 21.10. Strona jest już poprawiona. Przed nowym nagraniem przywrócić tylko kolor przycisku nowym commitem zgodnie z README, zachowując inne zmiany i historię; użyć nowej identyfikowalnej uwagi człowieka i nowej rundy.
 - Stałe przykłady przeglądarkowe pozostają pod https://app.voicedot.ai/reviewer/demo/harbor-notes/ i https://app.voicedot.ai/reviewer/demo/fieldwork-notes/.
 - Połączyć aktualną prywatną instalację wtyczki z dedykowanym kontem; weryfikację hasła i OAuth wykonać poza nagraniem.
 - Operator sprawdza czysty branch review, wersję początkową, Actions i ograniczony zapis Git. Dane dostępowe tylko w systemowym magazynie i prywatnym formularzu OpenAI, nigdy w komendach, repo ani kadrze filmu.
@@ -22,8 +26,8 @@ To scenariusz, nie dowód testu ani gotowy film. Najpierw operator przechodzi pr
 ## Część 2 — pięć pozytywnych i trzy negatywne przypadki
 
 1. W ChatGPT pokaż połączoną wtyczkę i pięć promptów z plugin.json: projekty, otwarte Harbor feedback, rozmowa o przycisku z odpowiedzią, przekazanie Fieldwork, stan istniejącej rundy Homepage fixes. Operator musi wcześniej przygotować prawdziwe zmiany i osobiste Checked, które odpowiadają oczekiwaniom paczki.
-2. Pokaż rzeczywisty wynik: Help pominięty w otwartych, nieprzekazana rozmowa Fieldwork niewidoczna, faktycznie sprawdzony przycisk i nagłówek oczekujący. Nie fabrykuj stanu tylko dla nagrania.
-3. Odpowiedź w otwartym wątku wymaga dokładnego podglądu i osobnego “Yes, send exactly this reply.” Treść może stwierdzać wdrożenie tylko po faktycznym wdrożeniu. Operator sprawdza powtórzenie tym samym tokenem w ciągu 10 minut i jedną zapisaną odpowiedź; token poza kadrem. Nie otwieraj Help odpowiedzią.
+2. Pokaż rzeczywisty wynik: Help pominięty w otwartych, nieprzekazana rozmowa Fieldwork niewidoczna, faktycznie przyjęty przycisk w zakończonej jednoelementowej rundzie. Nie dodawać fikcyjnego oczekującego nagłówka. Nie fabrykuj stanu tylko dla nagrania.
+3. Odpowiedź w otwartym wątku wymaga dokładnego podglądu i osobnego “Yes, send exactly this reply.” Treść może stwierdzać wdrożenie tylko po faktycznym wdrożeniu. Podgląd pokazuje previewId. Po zgodzie w osobnej turze agent potwierdza przez preview_id; operator sprawdza ponowienie tej samej operacji w jej 10-minutowym oknie i jedną zapisaną odpowiedź. W diagnostyce operator sprawdza replayed=true i ten sam messageId. W zwykłej odpowiedzi użytkownik widzi „Reply sent” albo „This reply was already sent. No duplicate was added”; bez surowych flag i identyfikatorów. Tajny token pozostaje poza kadrem. Nie otwieraj Help odpowiedzią.
 4. Pokaż trzy granice z plugin.json: haiku bez narzędzi VoiceDot, odmowa usunięcia i odmowa dostępu do cudzych projektów.
 
 ## Część 3 — instalacja i osobne CLI
