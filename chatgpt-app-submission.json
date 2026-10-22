@@ -400,10 +400,10 @@
       "expected_output": "Summarize the headline, button contrast, card picture, quote logo, and phone spacing. The closed Help conversation is excluded."
     },
     {
-      "description": "Read the button conversation and its replies.",
-      "user_prompt": "Show me the conversation about the Start a workspace button, with the replies.",
+      "description": "Read the original demo-page button conversation and its replies, distinct from the independent coding-demo page.",
+      "user_prompt": "Show me the conversation about the Start a workspace button on https://app.voicedot.ai/reviewer/demo/harbor-notes/, with the replies.",
       "tools_triggered": "search_pins with fields=full, or search_pins followed by get_pin_thread when the search result lacks full thread history",
-      "expected_output": "Show the original contrast note, its page context, and the team reply about making the button darker, in chronological order."
+      "expected_output": "Show the original laptop-screen contrast note on https://app.voicedot.ai/reviewer/demo/harbor-notes/, its page context, and the team reply about making the button darker, in chronological order. Do not substitute the separate resolved button thread on https://review.voicedot.ai."
     },
     {
       "description": "Read the conversation explicitly handed to an agent in Team mode.",
