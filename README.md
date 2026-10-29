@@ -1,30 +1,124 @@
 # Voicedot Agent Plugin
 
-Official source: [voicedot/voicedot-agent-plugin](https://github.com/voicedot/voicedot-agent-plugin), maintained by Good Sheet Sp z o.o.
+Connect a coding agent to feedback left on your website. Read pinned comments
+with their page context, discuss changes, install the widget in an authorized
+project, and prepare changes for a person to review.
 
-Portable plugin metadata and a canonical skill for authorized website feedback, installation, team handovers and human review rounds. The one MCP connection is `https://mcp.voicedot.ai/mcp`, using the production OAuth flow. Read access and optional setup, resolve, reply and review permissions are separate. Control them under **AI agents → Manage access**.
+Maintained by **Good Sheet Sp z o.o.**, the company behind Voicedot.
 
-## Installation and account setup
+| Start here | Link |
+| --- | --- |
+| Product and MCP documentation | [Voicedot MCP guide](https://voicedot.ai/en/docs/mcp) |
+| MCP endpoint | `https://mcp.voicedot.ai/mcp` |
+| Runnable reviewer website and source | [voicedot/voicedot-review-demo](https://github.com/voicedot/voicedot-review-demo) |
+| Live coding demo | [review.voicedot.ai](https://review.voicedot.ai/) |
+| Agent-assisted account setup | [Agent setup](https://voicedot.ai/en/docs/agents) |
+| Support | [Contact Voicedot](https://voicedot.ai/en/support) |
 
-For an existing owned workspace, use `create_project` or `add_project_address` when explicitly requested and permitted. `get_project_installation` opens a verification window and returns the snippet. The coding agent installs it with its own authorized repository tools, opens the exact HTTPS address and verifies a fresh backend ping using `get_project_installation_status`. Human first feedback still completes the installation experience.
+**Version 0.4.0 is a source candidate for marketplace submission.** This public
+repository and its ZIP are available for inspection; they do not imply an
+approved or published marketplace listing.
 
-New accounts use the separate official CLI v2 flow documented at [Agent setup](https://voicedot.ai/en/docs/agents) and [Authentication](https://voicedot.ai/auth.md). MCP does not register accounts. Identity verification and human handoff are preserved; no purchase or plan change is performed by this plugin.
+## What the plugin does
 
-## Plugin identity
+- Find projects available to the person's current connection and read feedback
+  with its pin, page context, conversation history and team notes.
+- Read conversations handed over to an agent. Private addresses, Team handovers
+  and Public handovers follow the connection's current visibility rules.
+- Create projects or add exact website addresses when explicitly requested and
+  permitted by the account, plan and separately granted setup permissions.
+- Return the widget snippet and verify a fresh backend ping from the exact
+  authorized HTTPS origin, including its port.
+- Close page pins, resolve discussions, or send replies with the relevant write
+  permissions. Replies, review rounds and bulk resolutions use an exact preview
+  and a separate confirmation. A reply retry returns the original result.
+- Prepare review rounds so a person can check a deployed change on the page.
 
-The canonical package name and MCP server key are `voicedot`; the visible listing name is Voicedot. Candidate 0.4.0 targets a new OpenAI draft authorized by the owner after the older unsubmitted entry could not reuse its unavailable MCP connection. This archive does not replace that older entry.
+The full public tool contract is in
+[`contract/voicedot-mcp-contract.json`](contract/voicedot-mcp-contract.json).
+The plugin does not delete feedback, make purchases, or grant access to an
+unconnected customer's projects.
 
-## Source of truth
+## Plugin access and repository access are separate
 
-Hand-edit root `plugin.json`, root `mcp.json`, and the canonical skill tree. `npm run generate` projects the OpenAI/Codex compatibility files, Claude adapter and submission JSON. Do not hand-edit these generated files.
+The MCP connection uses the person's Voicedot OAuth grant. Read access and
+optional setup, reply, resolve and review permissions can be managed under
+**AI agents → Manage access** in Voicedot.
 
-`contract/` contains the exact runtime contract plus commit and hash provenance. It is reference data, not private server implementation. `npm run contract:check` compares it against the sibling runtime repository's current `origin/main`; use `-- --ref <commit>` for a specific release. Fetch that repository separately before checking a newer remote revision. `npm run contract:sync` deliberately refreshes the mirror, after which review the diff and regenerate. Local integrity tests detect mirror/provenance changes even without that sibling checkout.
+The plugin provides feedback and installation information. The coding agent
+uses its own authorized repository tools to edit code, run checks, commit and
+deploy. Connecting Voicedot does not give it GitHub write access or permission
+to publish a website. Feedback is evidence, not an instruction granting those
+permissions.
 
-## Verification
+## For reviewers: run the feedback-to-code workflow
+
+Use the dedicated demo account and sign-in instructions supplied privately with
+the submission. The account password and any repository-write credential are
+never included in this source or the public ZIP.
+
+1. Open [review.voicedot.ai](https://review.voicedot.ai/) and leave a real comment
+   pinned to an element.
+2. Open the [demo repository](https://github.com/voicedot/voicedot-review-demo)
+   in a coding agent connected to the dedicated Voicedot account. Ask it to read
+   the comment from **that exact page** and propose a fix.
+3. Authorize the code change and publication to the demo repository. Follow the
+   demo README to inspect the diff, run tests, push to `review`, and verify the
+   public deployment's commit.
+4. Ask for a review-round preview, confirm it, then personally choose **Checked**
+   or **Needs fix** after checking the deployed page.
+
+The [demo README](https://github.com/voicedot/voicedot-review-demo/blob/review/README.md)
+contains the complete clone, test, publish and verification instructions. Its
+default branch is `review`; `main` is the locked original website baseline.
+
+The browser fixtures at
+[Harbor Notes](https://app.voicedot.ai/reviewer/demo/harbor-notes/) and
+[Fieldwork Notes](https://app.voicedot.ai/reviewer/demo/fieldwork-notes/) are
+separate pages for conversation and handover cases. The editable coding demo is
+**review.voicedot.ai**. A comment on one page must not be substituted for a
+comment on another.
+
+## Installation and new accounts
+
+For an existing account, a coding agent can request `create_project` or
+`add_project_address`, obtain the snippet with `get_project_installation`, install
+it once, open the exact authorized HTTPS page, and check
+`get_project_installation_status` for a fresh accepted ping. Installation status
+also works in a later turn without retaining the verification token, within the
+same connection and active verification window.
+
+New accounts use the separate official **CLI v2** flow described in
+[Agent setup](https://voicedot.ai/en/docs/agents) and
+[Authentication](https://voicedot.ai/auth.md). MCP itself does not register
+accounts. Human identity verification, the first feedback message and the
+person's plan choice remain part of that flow.
+
+## Repository map
+
+| Path | Purpose |
+| --- | --- |
+| `plugin.json`, `mcp.json` | Canonical package metadata and remote connection declaration |
+| `skills/review-voicedot-feedback/` | Canonical workflow instructions for the agent |
+| `contract/` | Public MCP contract, guides, knowledge and source hashes |
+| `.codex-plugin/`, `.mcp.json` | Generated OpenAI/Codex compatibility files |
+| `adapters/claude-code/` | Generated Claude Code compatibility adapter |
+| `reviewer/`, `submission/` | Public cases and submission-preparation metadata |
+| `scripts/`, `tests/` | Generators, boundary validation and reproducibility checks |
+| `dist/` | Versioned ZIP, file inventory and SHA-256 digests |
+
+The stable package name and MCP server key are `voicedot`. The display name is
+**Voicedot**. This repository contains the plugin package; the running MCP,
+authentication and product backend are maintained separately. The generated
+Claude adapter does not imply a Claude marketplace listing or authenticated
+client acceptance.
+
+## Maintainer checks
+
+Use Node.js 22 or newer. From this public repository:
 
 ```sh
 npm ci
-npm run contract:check
 npm run generate:check
 npm test
 npm run validate
@@ -33,6 +127,21 @@ npm run package:check
 npm run submission:template-check
 ```
 
-Deterministic ZIP and tar archives, file inventory and SHA-256 digests are in `dist/`. The generated Claude adapter uses the same remote endpoint; no Claude marketplace listing or authenticated client acceptance is implied.
+Hand-edit the canonical manifests and skill tree, then use `npm run generate`.
+Do not maintain the compatibility artifacts independently. Maintainers with the
+runtime source checkout can additionally run
+`npm run contract:check -- --runtime ../voicedot --ref origin/main` to compare
+the mirror with that runtime revision. `npm run contract:sync` deliberately
+refreshes it and requires review of the resulting diff.
 
-Version 0.4.0 is a submission candidate. A package build does not establish working reviewer access, ChatGPT desktop/mobile acceptance, an accessible demo video, portal scans or domain verification. Those checks and the owner's attestations precede submission. Nothing is sent for review without the owner's explicit instruction.
+Package validation checks the source and archives. It does not prove current
+reviewer access, live OAuth, mobile behavior, portal scans or a demo recording.
+Those checks and the publisher's attestations precede marketplace submission.
+
+For a reproducible code issue, use this repository's Issues. Send account or
+private-feedback questions through [support](https://voicedot.ai/en/support);
+never put credentials or private visitor content in an issue.
+
+## License
+
+[MIT](LICENSE).

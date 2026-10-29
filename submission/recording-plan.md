@@ -8,7 +8,7 @@ PreviewId jest wdrożony. 22.10 zaliczono w rzeczywistym ChatGPT Medium: podglą
 
 ## Przed nagraniem
 
-- Repo strony: https://github.com/piotrsynowiec/voicedot-review-demo — branch review.
+- Repo strony: https://github.com/voicedot/voicedot-review-demo — branch review.
 - Adres kodowanej strony: https://review.voicedot.ai/. DNS, wymuszone HTTPS, rzeczywisty ping widgetu i zgodny deployment.json potwierdzono 21.10. Pełny cykl rzeczywistego feedbacku, poprawki, ograniczonego pusha, publicznego wdrożenia i osobistego Checked przeszedł 21.10. Strona jest już poprawiona. Przed nowym nagraniem przywrócić tylko kolor przycisku nowym commitem zgodnie z README, zachowując inne zmiany i historię; użyć nowej identyfikowalnej uwagi człowieka i nowej rundy.
 - Stałe przykłady przeglądarkowe pozostają pod https://app.voicedot.ai/reviewer/demo/harbor-notes/ i https://app.voicedot.ai/reviewer/demo/fieldwork-notes/.
 - Połączyć aktualną prywatną instalację wtyczki z dedykowanym kontem; weryfikację hasła i OAuth wykonać poza nagraniem.

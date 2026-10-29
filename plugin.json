@@ -67,7 +67,7 @@
               "tools_triggered": "search_pins with fields=full, or search_pins followed by get_pin_thread when the search result lacks full thread history",
               "expected_behavior": "Show the original laptop-screen contrast note on https://app.voicedot.ai/reviewer/demo/harbor-notes/, its page context, and the team reply about making the button darker, in chronological order. Do not substitute the separate resolved button thread on https://review.voicedot.ai.",
               "file_attachment_urls": [
-                "https://github.com/piotrsynowiec/voicedot-review-demo/archive/795ea37df4a9f9c654286dd5ac1c6e13311ae2fd.zip"
+                "https://github.com/voicedot/voicedot-review-demo/archive/1c01ec4ef6a4979e4f9f54430096d469167e3ee0.zip"
               ]
             },
             {

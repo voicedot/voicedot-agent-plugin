@@ -3,8 +3,8 @@
   "files": [
     {
       "path": ".codex-plugin/plugin.json",
-      "bytes": 7670,
-      "sha256": "33dba145b6af66ac1c584b6ef6d354365cc23d8cef18f72034ac9a269dc7445d"
+      "bytes": 7665,
+      "sha256": "3c733dd1d586397af0f8cc522548278c42f4a19b158abef3501e9e9d3c5bb8d1"
     },
     {
       "path": ".mcp.json",
@@ -128,13 +128,13 @@
     },
     {
       "path": "plugin.json",
-      "bytes": 7793,
-      "sha256": "345b987fc5226b4b4cea739190ac3870d3e2fab78ae9a09c3fff9e111b10ebb1"
+      "bytes": 7788,
+      "sha256": "900f38e32510f1dd09c797bef56c35f06c67feca6fe7f94293d83dca1456ed77"
     },
     {
       "path": "README.md",
-      "bytes": 3160,
-      "sha256": "e18722ff64003412e26aed9eec1fbc7b18de37fbb939643216a9a6ef667598fd"
+      "bytes": 7158,
+      "sha256": "4a7c3d224016114bfda44c4a0e80baa9a2b3989765fef1937af1504279b11918"
     },
     {
       "path": "skills/review-voicedot-feedback/references/markdown-contract.md",
