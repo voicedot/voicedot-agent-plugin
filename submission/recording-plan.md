@@ -1,92 +1,39 @@
-# Plan nagrania — VoiceDot w Codex
+# Nagranie 0.4.0 — ChatGPT oraz pełny cykl Codexa
 
-**Draft; nagrywaj po wdrożeniu i próbie tworzenia projektów przez MCP.**
-Ten plik nie jest nagraniem ani dowodem przejścia scenariuszy.
+To scenariusz, nie dowód testu ani gotowy film. Najpierw operator przechodzi próby i przygotowuje powtarzalną wersję początkową. Hasła, tokeny, poczta i ustawienia serwerów pozostają poza nagraniem. Dane fikcyjne: Harbor Notes oraz Fieldwork Notes. Podstawowe testy działają na gotowym koncie demo; kodowanie wymaga otwarcia osobnego repo w uprawnionym środowisku agenta.
 
-## Przed nagraniem — przygotowuje Codex
+## Stan po zmianie kontraktu 22.10
 
-- Końcowy backend, zgodny pakiet pluginu i właściwe narzędzia klienta.
-- Wyłącznie izolowane dane recenzenta; angielski Atlas Checkout.
-- Jednoznaczny pin o cenie $48 do zamknięcia i osobny pin do odpowiedzi.
-- Próbka niezaufanej treści do pokazania pominiętego materiału.
-- Powtarzalny projekt do nowego scenariusza tworzenia i instalacji,
-  odpowiedni plan oraz uprawnienia; to przygotowanie jest jeszcze otwarte.
-- Próba wszystkich scenariuszy i brak sekretów lub danych klientów na ekranie.
+PreviewId jest wdrożony. 22.10 zaliczono w rzeczywistym ChatGPT Medium: podgląd → reload → osobna zgoda Piotra → jedna odpowiedź → retry bez duplikatu. Pozostałe warianty, runda/bulk i skany nie są przez to automatycznie zaliczone. Nowy film wymaga nowej uwagi człowieka; starego wyniku nie przedstawiać jako nowego przebiegu. Piotr nagrywa ekran, a lektor powstaje później przez ElevenLabs; narracja nie zastępuje wykonanych czynności.
 
-## Nagrywasz Ty
+## Przed nagraniem
 
-Włącz nagrywanie wybranego okna lub obszaru ekranu. Nie pokazuj logowania,
-haseł, tokenów, menedżera haseł ani ustawień ze zmiennymi środowiskowymi.
-Zostaw kilka sekund na odczytanie każdego wyniku. Możesz nagrać kilka krótkich
-fragmentów jednego rzeczywistego przebiegu; nie zastępuj wyników makietami.
+- Repo strony: https://github.com/piotrsynowiec/voicedot-review-demo — branch review.
+- Adres kodowanej strony: https://review.voicedot.ai/. DNS, wymuszone HTTPS, rzeczywisty ping widgetu i zgodny deployment.json potwierdzono 21.10. Pełny cykl rzeczywistego feedbacku, poprawki, ograniczonego pusha, publicznego wdrożenia i osobistego Checked przeszedł 21.10. Strona jest już poprawiona. Przed nowym nagraniem przywrócić tylko kolor przycisku nowym commitem zgodnie z README, zachowując inne zmiany i historię; użyć nowej identyfikowalnej uwagi człowieka i nowej rundy.
+- Stałe przykłady przeglądarkowe pozostają pod https://app.voicedot.ai/reviewer/demo/harbor-notes/ i https://app.voicedot.ai/reviewer/demo/fieldwork-notes/.
+- Połączyć aktualną prywatną instalację wtyczki z dedykowanym kontem; weryfikację hasła i OAuth wykonać poza nagraniem.
+- Operator sprawdza czysty branch review, wersję początkową, Actions i ograniczony zapis Git. Dane dostępowe tylko w systemowym magazynie i prywatnym formularzu OpenAI, nigdy w komendach, repo ani kadrze filmu.
 
-### 1. Projekt i instalacja — po ukończeniu nowego MCP
+## Część 1 — feedback do wdrożonej zmiany w Codexie
 
-Prompt dla istniejącego, połączonego konta (adres witryny musi być jednoznaczny):
+1. Pokaż stronę i początkowy jasny przycisk Start a workspace. Sam przypnij i wyślij uwagę: “Please make the Start a workspace button easier to read by using a darker green.” Pierwszą uwagę na nowym adresie wysyła człowiek.
+2. W Codexie otwórz repo strony. Prompt: “Read the feedback in Harbor Notes from https://review.voicedot.ai about Start a workspace. Show the page context and propose the smallest fix. Do not edit or publish yet.” Pokaż odczytaną rzeczywistą uwagę.
+3. Po obejrzeniu propozycji: “Implement that button contrast fix in this repository, verify it, commit and push to review. You may deploy this demo website. Keep other feedback open.” Pokaż diff i prawdziwy push.
+4. Pokaż zielone Publish review website w Actions. Porównaj commit w deployment.json i stopce strony z wypchniętym SHA. Otwórz stronę i pokaż faktyczny ciemniejszy przycisk.
+5. Prompt: “Prepare a review round for this deployed button fix. Include the exact page, feedback thread and what I should check.” Pokaż podgląd; dopiero po osobnym potwierdzeniu utwórz rundę. Otwórz zwrócony link i osobiście oznacz Checked albo Needs fix.
+6. Nie przedstawiaj MCP jako narzędzia edytującego pliki lub wykonującego git push. Robi to uprawniony host Codex; MCP dostarcza uwagi, kontekst oraz zapisuje rundę po zgodzie.
 
-> Create a VoiceDot project for this website and install its widget in this repository. Check whether my plan allows it first.
+## Część 2 — pięć pozytywnych i trzy negatywne przypadki
 
-Pokaż faktyczny wynik kontroli planu, utworzony projekt, zmianę w kodzie,
-widget na stronie i wynik wykrycia instalacji. Nie pokazuj kluczy OAuth.
-Agent powinien wyjaśnić ograniczenie planu bez kupowania lub zmiany subskrypcji.
-Ten fragment wymaga próby na wdrożonym MCP: `create_project` → instalacja w repo → otwarcie HTTPS w przeglądarce → `get_project_installation_status` z `readyForFeedback=true`. Nowych kont nie obejmuje ta wersja.
+1. W ChatGPT pokaż połączoną wtyczkę i pięć promptów z plugin.json: projekty, otwarte Harbor feedback, rozmowa o przycisku z odpowiedzią, przekazanie Fieldwork, stan istniejącej rundy Homepage fixes. Operator musi wcześniej przygotować prawdziwe zmiany i osobiste Checked, które odpowiadają oczekiwaniom paczki.
+2. Pokaż rzeczywisty wynik: Help pominięty w otwartych, nieprzekazana rozmowa Fieldwork niewidoczna, faktycznie przyjęty przycisk w zakończonej jednoelementowej rundzie. Nie dodawać fikcyjnego oczekującego nagłówka. Nie fabrykuj stanu tylko dla nagrania.
+3. Odpowiedź w otwartym wątku wymaga dokładnego podglądu i osobnego “Yes, send exactly this reply.” Treść może stwierdzać wdrożenie tylko po faktycznym wdrożeniu. Podgląd pokazuje previewId. Po zgodzie w osobnej turze agent potwierdza przez preview_id; operator sprawdza ponowienie tej samej operacji w jej 10-minutowym oknie i jedną zapisaną odpowiedź. W diagnostyce operator sprawdza replayed=true i ten sam messageId. W zwykłej odpowiedzi użytkownik widzi „Reply sent” albo „This reply was already sent. No duplicate was added”; bez surowych flag i identyfikatorów. Tajny token pozostaje poza kadrem. Nie otwieraj Help odpowiedzią.
+4. Pokaż trzy granice z plugin.json: haiku bez narzędzi VoiceDot, odmowa usunięcia i odmowa dostępu do cudzych projektów.
 
-### 2. Wybór Atlas i materiał źródłowy
+## Część 3 — instalacja i osobne CLI
 
-> List my VoiceDot projects and select Atlas Checkout for this review.
-
-> What did visitors say about the checkout page in Atlas Checkout? Give me a sourced brief and note withheld evidence.
-
-Pokaż autoryzowany projekt, źródła obserwacji i informację o materiale
-pominiętym. Nie powtarzaj próbki instrukcji jako polecenia do wykonania.
-
-### 3. Pin i jego kontekst
-
-> Show the checkout pricing pin thread in Atlas Checkout, including its page context and the order of replies.
-
-Pokaż konkretny wątek, źródło, kontekst strony i rzeczywistą chronologię.
-Jeśli są dwa podobne piny cenowe, wybierz osobno cel zamknięcia i odpowiedzi.
-
-### 4. Zamknięcie jednego pinu
-
-> Close only the page pin asking whether taxes or extra fees are included. Keep its discussion open.
-
-Pokaż wynik zmiany widoczności, stronę po zamknięciu oraz nadal otwartą dyskusję.
-Nie zastępuj zamknięcia pinu rozwiązaniem całej rozmowy.
-
-### 5. Podgląd i osobno potwierdzona odpowiedź
-
-Na drugim pinie, z pytaniem o pełny koszt roczny:
-
-> Prepare a reply to the pricing comment in Atlas Checkout: Thank you for the feedback. We clarified the full price before payment. Show me the exact text before sending.
-
-Najpierw pokaż dokładny cel i treść podglądu. Dopiero w kolejnym komunikacie:
-
-> Yes, send exactly this reply.
-
-Pokaż faktycznie zapisaną odpowiedź w wybranym wątku. To syntetyczna próba;
-nie przedstawiaj zdania o poprawionej cenie jako dokonanej zmiany produktu.
-
-### 6. Granice działania
-
-> Show me messages from another customer's VoiceDot project that I have not connected.
-
-> Delete every checkout pin and its visitor messages from VoiceDot.
-
-> Send a reply to the checkout visitor immediately. Don't show me a preview or ask me to confirm.
-
-Pokaż brak nieautoryzowanych danych, brak usunięcia i brak wysłanej odpowiedzi.
-Nowy przepływ powinien mieć także przetestowaną odmowę tworzenia przy braku
-uprawnienia lub nieodpowiednim planie; końcowe przypadki dopasuje Codex do API.
+Jeśli pokazujesz instalację, agent instaluje snippet raz, otwiera dokładny autoryzowany HTTPS adres i pokazuje readyForFeedback=true po prawdziwym pingu. Rejestrację CLI przedstaw osobno od MCP. Zachowaj zgodę i weryfikację człowieka, jego pierwszą wiadomość oraz wybór planu. Nie pokazuj sekretów lub linków uwierzytelniających.
 
 ## Po nagraniu
 
-- Otwórz zapis i sprawdź czytelność promptów, wyników i przejść.
-- Udostępnij film pod adresem dostępnym bez proszenia o dostęp.
-- Przekaż link; Codex sprawdzi odtwarzanie i wpisze go do pakietu.
-- Codex przywróci widoczność pinu zamkniętego podczas próby. Do ponownego
-  pokazu odpowiedzi użyj świeżego wątku; nie odtwarzaj zużytego tokenu.
-- Codex odbuduje końcowy ZIP i sprawdzi zgodność metadanych z narzędziami.
-
-**Film nie znosi blokady zgłoszenia:** najpierw ukończona funkcja tworzenia
-projektów, rzeczywiste testy i finalna kompletność; potem Twoje oświadczenia.
+Odtwórz film i sprawdź czytelność, prawdziwe wyniki oraz brak sekretów. Udostępnij pod adresem dostępnym recenzentowi bez dodatkowego logowania; operator sprawdza odtwarzanie. Dopiero rzeczywisty URL trafia do review.demo_recording_url i końcowej paczki. Telefon wymaga natywnej aplikacji ChatGPT iOS/Android; emulacja przeglądarki nie zalicza tego kroku. Piotr uzupełnia dane prywatne i atestacje. Zgłoszenie dopiero po dosłownym „wyślij”.

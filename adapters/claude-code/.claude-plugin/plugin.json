@@ -1,7 +1,7 @@
 {
   "name": "voicedot",
-  "version": "0.3.0",
-  "description": "Create and install VoiceDot projects in an existing workspace, review authorized feedback, and optionally close pins, resolve discussions, or reply.",
+  "version": "0.4.0",
+  "description": "Install Voicedot in an authorized website, review page feedback and team handovers, reply with confirmation, and prepare human review rounds.",
   "author": {
     "name": "Good Sheet Sp z o.o."
   }

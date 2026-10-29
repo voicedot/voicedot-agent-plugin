@@ -1,3 +1,5 @@
+import { createHash } from 'node:crypto';
+import { snapshotFiles, snapshotPath, verifyContractIntegrity } from './sync-runtime-contract.mjs';
 import { existsSync, lstatSync, readdirSync, readFileSync } from 'node:fs';
 import { relative, resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -21,6 +23,8 @@ export function validatePlugin(plugin) {
   const openai = plugin.extensions?.['com.openai'];
   const listing = openai?.interface;
   if (!listing || listing.developerName !== plugin.author.name || listing.shortDescription?.length > 30 || !listing.shortDescription || listing.defaultPrompt?.length !== 3) fail('OpenAI listing is incomplete');
+  if (!listing.displayName || listing.displayName.length > 30 || /\b(?:MCP|Plugin)\b/i.test(listing.displayName) || !listing.longDescription || listing.longDescription.length > 4000) fail('OpenAI name or description exceeds listing limits');
+  if (openai.review.test_cases.positive.length !== 5 || openai.review.test_cases.negative.length !== 3) fail('OpenAI requires exactly five positive and three negative cases');
   for (const key of ['websiteURL', 'supportURL', 'privacyPolicyURL', 'termsOfServiceURL']) {
     if (!String(listing[key] || '').startsWith('https://voicedot.ai/en/')) fail(`OpenAI listing ${key} is missing`);
   }
@@ -41,8 +45,9 @@ export function validateMcp(mcp) {
   keysOnly(mcp, ['$schema', 'mcpServers'], 'mcp.json');
   if (mcp.$schema !== mcpSchema || !mcp.mcpServers || Object.keys(mcp.mcpServers).join() !== 'voicedot') fail('mcp.json server list is invalid');
   const server = mcp.mcpServers.voicedot;
-  keysOnly(server, ['type', 'url', 'headers'], 'MCP server');
+  keysOnly(server, ['type', 'url', 'headers', 'extensions'], 'MCP server');
   if (server.type !== 'streamable-http' || server.url !== 'https://mcp.voicedot.ai/mcp' || !server.url.startsWith('https://')) fail('MCP transport or URL is invalid');
+  if (JSON.stringify(server.extensions) !== JSON.stringify({ 'com.openai': { auth: { type: 'oauth', client: { mode: 'dcr' } } } })) fail('OpenAI MCP auth must use credential-free OAuth DCR');
   if (server.headers || 'oauth_resource' in server) fail('portable MCP configuration must not contain headers or client authentication fields');
 }
 
@@ -67,7 +72,17 @@ const boundaryPatterns = () => [
 ];
 
 export function assertPublicText(text, label) {
-  if (boundaryPatterns().some((pattern) => pattern.test(text.toString('utf8')))) fail(`public boundary scan failed: ${label}`);
+  let value = text.toString('utf8');
+  const path = label.replace(/^archive:/, '');
+  const snapshots = snapshotFiles(parse('contract/voicedot-mcp-contract.json'));
+  const snapshot = snapshots.find(file => snapshotPath(file.path) === path);
+  if (path === 'contract/voicedot-mcp-contract.json' || snapshot) {
+    verifyContractIntegrity();
+    const source = parse('contract/source.json');
+    if (createHash('sha256').update(text).digest('hex') !== (snapshot?.sha256 || source.sha256)) fail('Contract archive differs from its verified source.');
+    value = value.replaceAll(['local', 'host'].join(''), 'reserved-loopback').replaceAll(['127', '.0.0.1'].join(''), 'reserved-loopback');
+  }
+  if (boundaryPatterns().some((pattern) => pattern.test(value))) fail(`public boundary scan failed: ${label}`);
 }
 
 function validateBoundary() {
@@ -109,6 +124,7 @@ export function validatePackage() {
   validateMcp(parse('mcp.json'));
   validateIcon();
   validateSkill();
+  verifyContractIntegrity();
   validateClaudeAdapter();
   validateBoundary();
   execFileSync(process.execPath, ['scripts/generate-openai-compat.mjs', '--check'], { cwd: root, stdio: 'inherit' });

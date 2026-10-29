@@ -1,7 +1,7 @@
 {
   "platform": "OpenAI",
   "status": "non-submitted",
-  "why": "Prepare the VoiceDot 0.3.0 public submission for Good Sheet Sp z o.o. with read access and optional resolving and replying. An existing 0.1.1 draft was inspected; no new upload or submission was made.",
+  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the current 29-tool production contract, dedicated demo account and independent coding-demo repository. Local previewId and result-copy changes are not yet in the saved portal draft. Nothing has been sent for review.",
   "pageOrSourceBlocker": {
     "kind": "verified-page",
     "source": "https://developers.openai.com/plugins/deploy/submission",
@@ -9,9 +9,9 @@
   },
   "fields": [
     {
-      "name": "MCP project creation and widget installation",
-      "status": "production-verified",
-      "reason": "Existing-account creation and installation tools are deployed. Active backend/MCP catalogs expose all three tools, the idempotency migration is applied, runtime health passed, and 101 focused backend tests plus package CI passed. Existing grants retain their old scopes; the owner must enable projects:create in Manage access and run the website flow. New-account onboarding is deferred. Reviewer creation access and the real demo remain pending."
+      "name": "Current runtime contract and account setup",
+      "status": "candidate-prepared",
+      "reason": "The package mirrors the 29-tool runtime at 10f17ead and knowledge 2026-10-20.1. A fresh Medium ChatGPT preview survived reload; separate human confirmation sent exactly one reply and a same-operation retry returned the original message without duplication. Remaining confirmation variants and saved-draft scans remain pending."
     },
     {
       "name": "listing, logo, skills, starter prompts, country availability and release notes",
@@ -20,23 +20,23 @@
     },
     {
       "name": "eight review test cases",
-      "status": "draft-unrun",
-      "reason": "Five positive and three negative cases use English Atlas Checkout. Real reviewer OAuth succeeded with six scopes; authenticated clean-client case replays and a real demo video remain pending."
+      "status": "partially-run",
+      "reason": "Five positive and three negative cases passed in the previous ChatGPT rehearsal; reruns against the current contract remain separate. Demo widget comments, confirmed team replies and Help closure are verified. The actual human feedback-to-code-to-public-deployment-to-Checked cycle and restricted HTTPS Git push passed on 21 October. Fresh CLI signup, installation, human first feedback and human Free choice also passed. Native mobile and remaining client checks are pending."
     },
     {
       "name": "public website, support and privacy content",
-      "status": "production-verified",
-      "reason": "Website PRs #14 and #15 are deployed. Public listing URLs, direct support contact, optional MCP actions, data-sharing disclosure and the September 29, 2026 privacy update date were verified. The future site replacement needs the same disclosure."
+      "status": "partially-verified",
+      "reason": "20 October production checks cover listing HTTP/User-Agents, public privacy disclosures, and EN/PL desktop/mobile Chrome layouts. After the owner-confirmed exact-path BIC correction, all 28 focused discovery/HEAD/MCP/outside-scope checks pass. The Chrome screenshot matrix uses an existing cookie profile; a pristine-profile run remains separate."
     },
     {
       "name": "business identity and portal access",
       "status": "observed-in-portal",
-      "reason": "The existing draft in the Holy organization selects Business — Good Sheet Sp z o.o. The authenticated submission form is accessible; final authorization and attestation remain with the owner."
+      "reason": "Piotr selected Good Sheet Sp z o.o. as publisher. The Holy organization and a verified Business status were visible in the portal, but the exact legal business name was not independently visible. Piotr verifies the selected legal entity and final attestations."
     },
     {
       "name": "OAuth and domain challenge",
-      "status": "verification-pending",
-      "reason": "The protected MCP URL and OAuth were entered in the existing draft. Real reviewer OAuth succeeded in Codex CLI. Final saved portal configuration, domain ownership verification and the tool scan remain pending."
+      "status": "verified-for-saved-draft",
+      "reason": "On 20 October the saved 0.4.0 draft showed Configured, a verified domain, 29 tools and no MCP findings. A separate private ChatGPT test installation connected, disconnected, reconnected and automatically rotated refresh credentials; a real call after the original access expiry succeeded. Revoked-bearer HTTP replay remains separate. New local bundle changes still need authorized replacement of the same draft and saved-version checks."
     },
     {
       "name": "final attestation",
@@ -66,7 +66,7 @@
   ],
   "result": {
     "status": "blocked",
-    "claim": "Preparation only. Owner explicitly holds submission and publication until MCP project creation and widget installation are complete; no final upload or submission has been made."
+    "claim": "No review submission. The real coding/review cycle, restricted reviewer Git push, CLI setup and human Checked are verified. The 22 October Medium reply/retry acceptance passed with one stored reply. PreviewId negative variants, round/bulk acceptance, refreshed saved-draft scans, native mobile, a verified recording URL and private owner fields remain gates. New local package changes do not replace the saved portal draft."
   },
-  "recovery": "Complete the requested project-creation workflow, entitlement and OAuth checks, safe reviewer access and real client replays. Update truthful listing, cases, release notes and policy coverage, then help the owner record the final video and complete private/legal fields. Keep submission on hold until the requested feature is verified."
+  "recovery": "Complete remaining evidence and human actions, add and verify the recording, rebuild and inspect the final ZIP, replace the same saved draft while preserving its identity and MCP binding, recheck portal findings, and obtain owner attestations. Submit only after Piotr explicitly says wyślij."
 }

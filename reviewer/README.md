@@ -1,12 +1,5 @@
-# Synthetic reviewer catalog
+# Demo review catalog
 
-`review-catalog-v1.json` is a public, synthetic-only projection of the
-P1–P5 and N1–N3 reviewer cases. P4 and P5 require optional write scopes and
-separate synthetic targets. It is intentionally not a workflow specification:
-the sole canonical workflow is
-[`skills/review-voicedot-feedback/SKILL.md`](../skills/review-voicedot-feedback/SKILL.md).
+The catalog describes five read-only positive and three negative cases using fictitious Harbor Notes and Fieldwork Notes sample data in an ordinary dedicated demo account. `syntheticOnly` describes the sample content, not a special synthetic authentication path. Credentials and personal account identifiers are never public catalog fields.
 
-The catalog maps the cases to their observable outcomes only. It has
-no login instructions, credentials, customer data, private paths, or runtime
-endpoint; use it to check a local synthetic reviewer, never as a production
-runbook.
+The sole canonical agent workflow is [`skills/review-voicedot-feedback/SKILL.md`](../skills/review-voicedot-feedback/SKILL.md). This catalog does not assert that a case has run. Actual production setup and case evidence are recorded privately by the operator. A separate, explicitly confirmed reply rehearsal targets the open phone-spacing conversation; the closed Help conversation stays closed.

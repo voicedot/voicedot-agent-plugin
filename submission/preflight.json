@@ -25,12 +25,12 @@
     "website",
     "supportUrl",
     "privacyUrl",
-    "termsUrl",
-    "reviewerAccess"
+    "termsUrl"
   ],
   "outstandingChecks": [
     "immutableCandidate",
     "cleanClientEvidence",
-    "productionEvidence"
+    "productionEvidence",
+    "reviewerAccess"
   ]
 }

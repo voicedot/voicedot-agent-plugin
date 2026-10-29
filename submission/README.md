@@ -1,102 +1,26 @@
-# OpenAI submission materials
+# OpenAI submission materials — 0.4.0
 
-Prepared on 2026-09-29 for version 0.3.0. This is a candidate, not a claim of
-submission or publication.
+Prepared on 2026-10-20. This is a local candidate, not a submission or publication.
 
-## Files
+- `plugin.json`: listing, three starter prompts, five positive and three negative cases, all available countries and no commerce.
+- `chatgpt-app-submission.json`: generated form import with exact annotations for all 29 tools.
+- `contract/`: byte-verified runtime contract, published guide and knowledge 2026-10-20.1, plus source commit and digests.
+- `dist/voicedot-agent-plugin-0.4.0.zip`: deterministic upload candidate, inventory and SHA-256 digest beside it.
+- `assets/icon.png`: existing square brand PNG.
+- `recording-plan.md`: actual ChatGPT rehearsal plan, not a recording.
 
-- `plugin.json`: portable listing, three starter prompts, five positive and
-  three negative review cases, all-country availability and no commerce.
-- `chatgpt-app-submission.json`: generated import for the form currently shown
-  in OpenAI Platform. Includes annotations and justifications for 22 tools.
-- `dist/voicedot-agent-plugin-0.3.0.zip`: ZIP for the package upload workflow.
-- `assets/icon.png`: existing VoiceDot brand icon, 512 × 512 PNG.
-- `skills/review-voicedot-feedback/`: canonical workflow and references.
+Use the existing Voicedot plugin identity in the Holy organization; the observed developer is Good Sheet Sp z o.o. Do not create a duplicate. The historical portal version 0.1.1 still describes read-only access and lacks skills; update it only through the supported full-ZIP draft flow after materials are complete. Preserve its one remote MCP connection and verify saved connection state after reupload.
 
-The publisher must be the selected verified business identity. The observed
-portal spells it `Good Sheet Sp z o.o.`; both package author fields match that
-displayed identity. The existing portal draft is version 0.1.1 and still
-describes read-only access. Update that draft instead of creating a duplicate.
+## Required gates
 
-## Verification
+Run generation, contract, tests, validation and deterministic package checks. `contract:check` compares the runtime sibling's current `origin/main`, not only the pinned historical source. Fetch the runtime repository separately when checking a newer remote revision. Offline tests verify every copied file's digest. Neither proves actual ChatGPT behavior.
 
-Run `npm run generate`, `npm run generate:check`, `npm run package`, `npm test`
-and `npm run package:check`. Validate the generated import against the
-[official JSON schema](https://developers.openai.com/plugins/schemas/chatgpt-app-submission.v1.json).
-The imported annotations must match the tools scanned from the deployed
-server, including irreversible visitor-facing reply sends.
+Complete the dedicated ordinary demo account with Harbor Notes (Private) and Fieldwork Notes (Team), sample messages, replies, a closed Help conversation, a team handover and Homepage fixes review round. Use the current runbook supplied by the product owner. Do not insert artificial customer messages through a database seed. The person records the voice example and marks Checked.
 
-Backend tests are separate from clean-client review replays. No successful
-authenticated review replay or demo recording is claimed by this repository.
+Run the exact eight cases in ChatGPT web. Separately prove the reply preview, explicit confirmation and same-token retry without a duplicate message. Run cases one and three in the actual ChatGPT iOS/Android app; a narrow browser viewport is only responsive-web evidence.
 
-## Submission hold — owner decision, 2026-09-30
+Verify the public listing content, all required user agents, OAuth metadata, exact domain token and saved portal scans. Piotr enters reviewer credentials only in the protected portal fields and completes legal attestations. The video URL must play without a login. Screenshots are acceptance evidence; current OpenAI guidance says starter prompts replace screenshots in the Directory.
 
-Do not submit or publish this plugin until the requested MCP project-creation
-and widget-installation workflow is implemented, tested and reflected in the
-final package, review cases, reviewer access and public policy coverage.
-Version 0.3.0 includes the existing-account creation and installation workflow
-as a release candidate, with the existing-account tools deployed and runtime
-checks passed. First-project onboarding is deferred; actual website and reviewer
-case evidence must be completed before final submission.
+Freeze final source/version/hash after the video and remaining metadata are complete. No actual submission occurs before Piotr explicitly says “wyślij”. Publishing after review is a separate authorized action.
 
-The owner will record the final video and complete the final private/legal
-fields. Preparation continues locally. See [preparation checklist](preparation-checklist.md)
-and [recording plan](recording-plan.md). Final package upload follows completed
-preparation; submission and publication remain on hold.
-
-## Verified on 2026-09-30
-
-- Backend PR #37 and website PR #14 are merged and deployed. The production
-  server includes the corrected send annotations and supports the isolated
-  reviewer's resolving and replying scopes.
-- Website PR #15 is merged and deployed. The public privacy policy shows
-  September 29, 2026, the date the MCP disclosure was added.
-- All four public listing URLs were checked. The website describes optional
-  actions, MCP data sharing and direct support contact.
-- A real Codex CLI OAuth login succeeded for the dedicated reviewer with the
-  six intended scopes. The configured client still needs to load its tools
-  and complete all eight review replays; successful login alone is not replay
-  evidence. Private credentials and runtime details remain outside this repo.
-- The future `voicedot-site` replacement needs the same MCP disclosure before
-  switching the public website. Its current privacy documents remain drafts;
-  website replacement is not part of these completed deployments.
-
-## Remaining publication steps
-
-1. Replay the eight cases with a fresh authenticated client against only the
-   synthetic projects. Use the English Atlas Checkout page for every case.
-   Record actual tool calls and outcomes. Restore the synthetic pins afterwards
-   so the cases remain reproducible. Complete production write verification.
-2. Record a real video showing the submitted client, evidence review, page-pin
-   closure and a preview followed by an explicitly confirmed reply. Host it
-   where the review team can watch without requesting access. Set the real
-   `review.demo_recording_url` in `plugin.json`, then regenerate and rebuild.
-3. Freeze the final commit, annotated version tag and exact archive digests.
-4. Import the JSON or upload the ZIP using the workflow presented by the
-   existing portal. Check saved metadata, skills, starter prompts, all-country
-   availability, no-commerce declaration and version. Upload actual icons.
-   Enter reviewer credentials only in the portal's protected fields.
-5. Configure the existing server with OAuth, verify domain ownership, scan all
-   tools and reconcile every annotation with deployed behavior. Never select
-   No Auth for the protected VoiceDot endpoint.
-6. The legal owner reviews the attestations and submits the complete draft.
-   Publication is a separate action after approval.
-
-See [OpenAI submission documentation](https://developers.openai.com/plugins/deploy/submission).
-The observed portal uses a JSON import form; the documentation also describes
-a ZIP workflow. Use the actual interface presented by the target organization.
-
-## Demo outline (about three minutes)
-
-- Start with the dedicated reviewer account, with resolving and replying
-  enabled. Use only the English Atlas Checkout page for every review case
-  and the recording.
-- Ask for an Atlas checkout evidence brief. Show citations and withheld counts.
-- Inspect the pricing pin and its chronology.
-- Ask to close only that page pin. Show it disappear from the synthetic page
-  while its discussion remains open in VoiceDot.
-- Ask for an English pricing reply to a separate Atlas Checkout pin. Show the exact preview,
-  separately confirm it, then show the stored visitor-facing reply.
-- Demonstrate refusal of unsupported deletion and an unconfirmed send.
-- Reopen the Atlas page pin after recording. Use a fresh thread for another
-  send demonstration; reply tokens are single-use and reply cooldown applies.
+Official requirements: [submission](https://developers.openai.com/plugins/deploy/submission), [guidelines](https://developers.openai.com/plugins/plugin-guidelines), [ChatGPT connection](https://developers.openai.com/plugins/deploy/connect-chatgpt).
