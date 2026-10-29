@@ -49,6 +49,8 @@ Do not delete feedback, bypass safety review, infer a successful write from a ti
 
 ## Present action results clearly
 
+Describe discussion status using `statusDescription` when present. `needs_founder_reply` means the team should reply; `needs_reviewer_reply` means the team has replied and is waiting for the person who left the feedback. Explain this in ordinary language rather than displaying a machine code or suggesting that the app reviewer owes a reply. Keep pin visibility and discussion status separate.
+
 After a successful action, lead with the human outcome in the person's language, not raw API fields. For a new reply say “Reply sent.” For a replay say “This reply was already sent. No duplicate was added.” A replay is a successful retry, not a failed reply. Include a short content summary and the returned conversation link when useful. Keep `replayed`, `alreadyConfirmed`, technical IDs and raw timestamps out of routine success messages; show them only when the person explicitly asks for diagnostics or a test report. The visible `previewId` still belongs in the pre-action approval preview. For an existing round say “This review round already exists” and return its link. Do not claim a message, email or new round was created when the tool only returned the existing result.
 
 ## Briefs
