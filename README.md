@@ -1,5 +1,7 @@
 # Voicedot Agent Plugin
 
+Official source: [voicedot/voicedot-agent-plugin](https://github.com/voicedot/voicedot-agent-plugin), maintained by Good Sheet Sp z o.o.
+
 Portable plugin metadata and a canonical skill for authorized website feedback, installation, team handovers and human review rounds. The one MCP connection is `https://mcp.voicedot.ai/mcp`, using the production OAuth flow. Read access and optional setup, resolve, reply and review permissions are separate. Control them under **AI agents → Manage access**.
 
 ## Installation and account setup

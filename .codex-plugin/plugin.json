@@ -7,7 +7,7 @@
     "url": "https://voicedot.ai/en"
   },
   "homepage": "https://voicedot.ai/en/docs/mcp",
-  "repository": "https://github.com/piotrsynowiec/voicedot-agent-plugin",
+  "repository": "https://github.com/voicedot/voicedot-agent-plugin",
   "license": "MIT",
   "keywords": [
     "feedback",
