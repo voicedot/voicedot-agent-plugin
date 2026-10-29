@@ -1,5 +1,7 @@
 # VoiceDot Agent Plugin
 
+Official source: [voicedot/voicedot-agent-plugin](https://github.com/voicedot/voicedot-agent-plugin), maintained by Good Sheet Sp z o.o.
+
 Portable MCP metadata and a canonical skill for reviewing authorized VoiceDot feedback. It connects to `https://mcp.voicedot.ai/mcp`; OAuth and project authorization are discovered and enforced by the production service. Closing page pins, resolving discussions, and replying need separate optional write permissions. Closing a page pin hides it from the live page without resolving its discussion. Visitor-facing replies require an exact preview and explicit confirmation.
 
 ## Create and install for an existing account
