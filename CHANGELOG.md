@@ -1,7 +1,8 @@
 # Changelog
 
-## 0.4.0 - unreleased
+## 0.4.0 - 2026-10-29 (submission candidate)
 
+- Publish the prepared 0.4.0 source under the Voicedot GitHub organization; marketplace submission remains pending.
 - Prepare a new owner-authorized OpenAI draft with the portable `voicedot` identity and explicit OAuth DCR; preserve the older unsubmitted entry separately.
 
 - Add visible preview references for confirmed replies, review rounds and bulk resolutions across turns; preserve exact content, latest-preview checks and safe reply retries.
