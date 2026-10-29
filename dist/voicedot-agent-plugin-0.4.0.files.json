@@ -48,8 +48,8 @@
     },
     {
       "path": "contract/agent-guide.md",
-      "bytes": 16368,
-      "sha256": "d69bb9cf8c79605e6ce26dd729c51eaebb17482c7dd23f635cd07df452900ec1"
+      "bytes": 16383,
+      "sha256": "1d4a9893bf3284535449045134cf5cd94fe71a389fc8b496c0eb41f6843bad5e"
     },
     {
       "path": "contract/knowledge/en/address_modes.md",
@@ -109,12 +109,12 @@
     {
       "path": "contract/source.json",
       "bytes": 2843,
-      "sha256": "c06d05dcb1278f271c8ab638838d1a02f1574cf0e9cf837c81ca57a5617a465e"
+      "sha256": "a4e6d083974a2d34022502647da146bbc359f6d44eda4259d3378cdc84f048d6"
     },
     {
       "path": "contract/voicedot-mcp-contract.json",
       "bytes": 89406,
-      "sha256": "8f14a2d940c029c87952fc224b5e82ef4115c86154118ba314c18ab7e85de6f3"
+      "sha256": "ce627875ea25d185ae3ab2860f06b7b4e36d8ca0587968e107357cac633ceb4e"
     },
     {
       "path": "LICENSE",
