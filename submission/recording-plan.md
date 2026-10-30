@@ -1,6 +1,12 @@
 # Nagranie 0.4.0 — ChatGPT oraz pełny cykl Codexa
 
-To scenariusz, nie dowód testu ani gotowy film. Najpierw operator przechodzi próby i przygotowuje powtarzalną wersję początkową. Hasła, tokeny, poczta i ustawienia serwerów pozostają poza nagraniem. Dane fikcyjne: Harbor Notes oraz Fieldwork Notes. Podstawowe testy działają na gotowym koncie demo; kodowanie wymaga otwarcia osobnego repo w uprawnionym środowisku agenta.
+To scenariusz, nie gotowy film. Dowody wykonania i nagrania są osobnymi materiałami. Hasła, tokeny, poczta i ustawienia serwerów pozostają poza nagraniem. Dane fikcyjne: Harbor Notes oraz Fieldwork Notes. Podstawowe testy działają na gotowym koncie demo; kodowanie wymaga otwarcia osobnego repo w uprawnionym środowisku agenta.
+
+## Stan nagrań 30.10 — przeczytaj przed ponownym wykonaniem scen
+
+Pełny cykl Harbor Notes (uwaga człowieka → zmiana kodu → publiczne wdrożenie → osobiste Checked) i odpowiedź z ponowieniem są już nagrane. Zachowaj poprawioną stronę i zapisaną decyzję. Poniższy scenariusz opisuje przebieg tych scen, ale nie jest poleceniem ich resetu. Ponowna realizacja wymaga osobnej decyzji Piotra. Rejestracja CLI dla Workshop Notes jest osobną, niedokończoną sceną; wcześniejszych prób diagnostycznych nie przedstawiać jako ukończonej instalacji.
+
+Operator steruje OpenScreen i Chrome. Gdy wymagany krok wykonuje Piotr w oknie Codexa, nagranie obejmuje jego rzeczywistą pracę. Narracja angielska powstanie później; nie zastępuje wyników narzędzi ani zgód człowieka.
 
 ## Stan po zmianie kontraktu 22.10
 
@@ -9,7 +15,7 @@ PreviewId jest wdrożony. 22.10 zaliczono w rzeczywistym ChatGPT Medium: podglą
 ## Przed nagraniem
 
 - Repo strony: https://github.com/voicedot/voicedot-review-demo — branch review.
-- Adres kodowanej strony: https://review.voicedot.ai/. DNS, wymuszone HTTPS, rzeczywisty ping widgetu i zgodny deployment.json potwierdzono 21.10. Pełny cykl rzeczywistego feedbacku, poprawki, ograniczonego pusha, publicznego wdrożenia i osobistego Checked przeszedł 21.10. Strona jest już poprawiona. Przed nowym nagraniem przywrócić tylko kolor przycisku nowym commitem zgodnie z README, zachowując inne zmiany i historię; użyć nowej identyfikowalnej uwagi człowieka i nowej rundy.
+- Adres kodowanej strony: https://review.voicedot.ai/. DNS, wymuszone HTTPS, rzeczywisty ping widgetu i zgodny deployment.json potwierdzono 21.10. Pełny cykl ponownie wykonano i nagrano 30.10. Strona jest już poprawiona. Nie przywracaj jasnego przycisku przed odrębną sceną CLI ani podczas montażu. Jeśli Piotr osobno zleci ponowienie cyklu kodowania, przywróć tylko kolor nowym commitem zgodnie z README, zachowując historię, i użyj nowej uwagi człowieka oraz nowej rundy.
 - Stałe przykłady przeglądarkowe pozostają pod https://app.voicedot.ai/reviewer/demo/harbor-notes/ i https://app.voicedot.ai/reviewer/demo/fieldwork-notes/.
 - Połączyć aktualną prywatną instalację wtyczki z dedykowanym kontem; weryfikację hasła i OAuth wykonać poza nagraniem.
 - Operator sprawdza czysty branch review, wersję początkową, Actions i ograniczony zapis Git. Dane dostępowe tylko w systemowym magazynie i prywatnym formularzu OpenAI, nigdy w komendach, repo ani kadrze filmu.
@@ -33,6 +39,8 @@ PreviewId jest wdrożony. 22.10 zaliczono w rzeczywistym ChatGPT Medium: podglą
 ## Część 3 — instalacja i osobne CLI
 
 Jeśli pokazujesz instalację, agent instaluje snippet raz, otwiera dokładny autoryzowany HTTPS adres i pokazuje readyForFeedback=true po prawdziwym pingu. Rejestrację CLI przedstaw osobno od MCP. Zachowaj zgodę i weryfikację człowieka, jego pierwszą wiadomość oraz wybór planu. Nie pokazuj sekretów lub linków uwierzytelniających.
+
+Do świeżej sceny CLI służy osobna strona https://install.voicedot.ai i repo https://github.com/voicedot/voicedot-install-demo (Workshop Notes). Nie używaj ukończonego Harbor Notes do instalacji od zera. Nowe żądanie musi wysłać nowy mail po zgodach człowieka. Ekran oczekiwania EN/PL kieruje do przycisku potwierdzającego adres w mailu, otwarcia linka w tej samej przeglądarce i powrotu do agenta. Nie ma osobnego kodu do przepisania. Weryfikacja e-maila nie loguje użytkownika; późniejszy link logowania jest osobnym krokiem. Mail i jednorazowe linki pozostają poza filmem.
 
 ## Po nagraniu
 

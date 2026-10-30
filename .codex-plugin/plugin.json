@@ -53,7 +53,7 @@
               "description": "Inspect the latest human review round and its recorded decision.",
               "prompt": "Show the latest review round in Harbor Notes and its review decisions.",
               "tools_triggered": "list_review_rounds, get_review_round",
-              "expected_behavior": "Show Homepage fixes for the deployed Start a workspace button contrast change on https://review.voicedot.ai. The single item was checked by the human, the round is completed, and its linked pin thread is resolved and closed. Report the recorded decision without changing it or checking any item as the agent."
+              "expected_behavior": "Show the latest Homepage fixes round for the deployed Start a workspace button contrast change on https://review.voicedot.ai. The single item was checked by the human, the round is completed, and its linked page pin is closed. Report the recorded decision without changing it or checking any item as the agent. Keep the discussion status separate: a later team reply may leave the discussion awaiting the person who left the feedback even though the pin remains closed."
             }
           ],
           "negative": [

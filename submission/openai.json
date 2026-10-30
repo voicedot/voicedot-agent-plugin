@@ -1,7 +1,7 @@
 {
   "platform": "OpenAI",
   "status": "non-submitted",
-  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the current 29-tool production contract, dedicated demo account and independent coding-demo repository. Local previewId and result-copy changes are not yet in the saved portal draft. Nothing has been sent for review.",
+  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the 29-tool contract, dedicated demo account and independent coding-demo repository. The local package tracks runtime source ad658c43. The exact saved portal bundle needs a fresh comparison before final handoff. Nothing has been sent for review.",
   "pageOrSourceBlocker": {
     "kind": "verified-page",
     "source": "https://developers.openai.com/plugins/deploy/submission",
@@ -11,7 +11,7 @@
     {
       "name": "Current runtime contract and account setup",
       "status": "candidate-prepared",
-      "reason": "The package mirrors the 29-tool runtime at 10f17ead and knowledge 2026-10-20.1. A fresh Medium ChatGPT preview survived reload; separate human confirmation sent exactly one reply and a same-operation retry returned the original message without duplication. Remaining confirmation variants and saved-draft scans remain pending."
+      "reason": "The package source provenance records runtime ad658c43 and knowledge 2026-10-20.1. The local ZIP fingerprint is derived from the actual archive by the submission validator. Runtime provenance does not itself prove the saved portal version or a fresh production check. Historical confirmation tests and the 30 October recorded reply/retry are tracked separately from remaining confirmation variants."
     },
     {
       "name": "listing, logo, skills, starter prompts, country availability and release notes",
@@ -21,7 +21,7 @@
     {
       "name": "eight review test cases",
       "status": "partially-run",
-      "reason": "Five positive and three negative cases passed in the previous ChatGPT rehearsal; reruns against the current contract remain separate. Demo widget comments, confirmed team replies and Help closure are verified. The actual human feedback-to-code-to-public-deployment-to-Checked cycle and restricted HTTPS Git push passed on 21 October. Fresh CLI signup, installation, human first feedback and human Free choice also passed. Native mobile and remaining client checks are pending."
+      "reason": "Five positive and three negative cases passed in earlier ChatGPT rehearsals. The 30 October recording ledger covers the feedback-to-code-to-deployment-to-human-Checked cycle, team handover, search, refusals, and a confirmed reply with a duplicate-free retry. Earlier CLI signup and human first-feedback tests are historical evidence. The new Workshop Notes CLI recording is incomplete: no completed signup, installation or ping is established for that take. Native mobile and remaining client checks are pending."
     },
     {
       "name": "public website, support and privacy content",
@@ -36,7 +36,12 @@
     {
       "name": "OAuth and domain challenge",
       "status": "verified-for-saved-draft",
-      "reason": "On 20 October the saved 0.4.0 draft showed Configured, a verified domain, 29 tools and no MCP findings. A separate private ChatGPT test installation connected, disconnected, reconnected and automatically rotated refresh credentials; a real call after the original access expiry succeeded. Revoked-bearer HTTP replay remains separate. New local bundle changes still need authorized replacement of the same draft and saved-version checks."
+      "reason": "On 30 October a fresh rescan of the same saved draft finished with Configured, Authorized, Domain verified, 29 tools and no MCP findings in the live portal. The newly corrected local round-case text has not replaced that saved bundle. Earlier reconnect and refresh tests remain historical; revoked-bearer HTTP replay remains separate."
+    },
+    {
+      "name": "CLI email verification screen",
+      "status": "deployed-browser-preview-verified",
+      "reason": "On 30 October production app revision 2565b4a9 replaced the misleading browser credential input with EN/PL email-link instructions and fixed mobile card padding. Real Chrome checks covered desktop and 390x844 using HTML rendered by the active production template; this is not a new registration. The new Workshop Notes signup, installation and backend ping remain pending. This UI-only change does not alter the MCP contract provenance."
     },
     {
       "name": "final attestation",
@@ -66,7 +71,7 @@
   ],
   "result": {
     "status": "blocked",
-    "claim": "No review submission. The real coding/review cycle, restricted reviewer Git push, CLI setup and human Checked are verified. The 22 October Medium reply/retry acceptance passed with one stored reply. PreviewId negative variants, round/bulk acceptance, refreshed saved-draft scans, native mobile, a verified recording URL and private owner fields remain gates. New local package changes do not replace the saved portal draft."
+    "claim": "No review submission. The 30 October recording ledger records a human feedback-to-code-to-public-deployment-to-Checked cycle and a reply/retry with one stored reply. Earlier CLI setup is historical evidence; the new Workshop Notes signup and installation take is incomplete. Remaining confirmation variants, fresh saved-draft checks, native mobile, a verified final recording URL, immutable candidate and private owner fields remain gates."
   },
   "recovery": "Complete remaining evidence and human actions, add and verify the recording, rebuild and inspect the final ZIP, replace the same saved draft while preserving its identity and MCP binding, recheck portal findings, and obtain owner attestations. Submit only after Piotr explicitly says wyślij."
 }
