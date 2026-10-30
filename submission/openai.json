@@ -21,7 +21,7 @@
     {
       "name": "eight review test cases",
       "status": "partially-run",
-      "reason": "Five positive and three negative cases passed in earlier ChatGPT rehearsals. The 30 October recording ledger covers the feedback-to-code-to-deployment-to-human-Checked cycle, team handover, search, refusals, and a confirmed reply with a duplicate-free retry. Earlier CLI signup and human first-feedback tests are historical evidence. The new Workshop Notes CLI recording is incomplete: no completed signup, installation or ping is established for that take. Native mobile and remaining client checks are pending."
+      "reason": "Five positive and three negative cases passed in earlier ChatGPT rehearsals. The 30 October recording ledger covers the feedback-to-code-to-deployment-to-human-Checked cycle, handover, search, refusals and a confirmed reply with a duplicate-free retry. A separate fresh Workshop Notes CLI flow completed on 30 October: human consent and email verification, snippet deployment, backend ping reported by the CLI, one human pinned comment and that comment visible in Inbox. Four trimmed video exports exist; final assembly, narration, privacy/playback review and hosting remain separate. Native mobile and remaining client checks are pending."
     },
     {
       "name": "public website, support and privacy content",
@@ -40,8 +40,8 @@
     },
     {
       "name": "CLI email verification screen",
-      "status": "deployed-browser-preview-verified",
-      "reason": "On 30 October production app revision 2565b4a9 replaced the misleading browser credential input with EN/PL email-link instructions and fixed mobile card padding. Real Chrome checks covered desktop and 390x844 using HTML rendered by the active production template; this is not a new registration. The new Workshop Notes signup, installation and backend ping remain pending. This UI-only change does not alter the MCP contract provenance."
+      "status": "deployed-and-fresh-flow-recorded",
+      "reason": "Production app revision 2565b4a9 provides EN/PL email-link instructions with no manual credential input. Desktop/mobile rendered-template checks passed, followed by a fresh production CLI registration and human email verification. The flow continued through deployment, agent-confirmed backend ping, human first comment and Inbox. This UI-only change does not alter MCP contract provenance. Final assembled recording review remains pending."
     },
     {
       "name": "final attestation",
@@ -71,7 +71,7 @@
   ],
   "result": {
     "status": "blocked",
-    "claim": "No review submission. The 30 October recording ledger records a human feedback-to-code-to-public-deployment-to-Checked cycle and a reply/retry with one stored reply. Earlier CLI setup is historical evidence; the new Workshop Notes signup and installation take is incomplete. Remaining confirmation variants, fresh saved-draft checks, native mobile, a verified final recording URL, immutable candidate and private owner fields remain gates."
+    "claim": "No review submission. The 30 October recording ledger covers both a human feedback-to-code-to-public-deployment-to-Checked cycle with reply/retry and a separate fresh Workshop Notes CLI registration-to-installation-to-human-first-comment-to-Inbox flow. Four CLI video exports exist. Remaining confirmation variants, final saved-draft checks, native mobile, verified final hosted recording, immutable candidate and private owner fields remain gates."
   },
   "recovery": "Complete remaining evidence and human actions, add and verify the recording, rebuild and inspect the final ZIP, replace the same saved draft while preserving its identity and MCP binding, recheck portal findings, and obtain owner attestations. Submit only after Piotr explicitly says wyślij."
 }

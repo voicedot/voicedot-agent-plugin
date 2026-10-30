@@ -4,7 +4,7 @@ To scenariusz, nie gotowy film. Dowody wykonania i nagrania są osobnymi materia
 
 ## Stan nagrań 30.10 — przeczytaj przed ponownym wykonaniem scen
 
-Pełny cykl Harbor Notes (uwaga człowieka → zmiana kodu → publiczne wdrożenie → osobiste Checked) i odpowiedź z ponowieniem są już nagrane. Zachowaj poprawioną stronę i zapisaną decyzję. Poniższy scenariusz opisuje przebieg tych scen, ale nie jest poleceniem ich resetu. Ponowna realizacja wymaga osobnej decyzji Piotra. Rejestracja CLI dla Workshop Notes jest osobną, niedokończoną sceną; wcześniejszych prób diagnostycznych nie przedstawiać jako ukończonej instalacji.
+Pełny cykl Harbor Notes (uwaga człowieka → zmiana kodu → publiczne wdrożenie → osobiste Checked) i odpowiedź z ponowieniem są już nagrane. Zachowaj poprawioną stronę i zapisaną decyzję. Poniższy scenariusz opisuje przebieg tych scen, ale nie jest poleceniem ich resetu. Ponowna realizacja wymaga osobnej decyzji Piotra. Osobny świeży przebieg CLI dla Workshop Notes także ukończono 30.10: zgody i weryfikacja człowieka, instalacja snippetu, wdrożenie, ping oraz pierwsza przypięta uwaga widoczna w Inboxie. Powstały cztery skrócone eksporty. Wcześniejsze próby diagnostyczne są zastąpione tym przebiegiem. Montaż, narracja, pełna kontrola prywatności i publikacja filmu pozostają do wykonania.
 
 Operator steruje OpenScreen i Chrome. Gdy wymagany krok wykonuje Piotr w oknie Codexa, nagranie obejmuje jego rzeczywistą pracę. Narracja angielska powstanie później; nie zastępuje wyników narzędzi ani zgód człowieka.
 
@@ -38,7 +38,7 @@ PreviewId jest wdrożony. 22.10 zaliczono w rzeczywistym ChatGPT Medium: podglą
 
 ## Część 3 — instalacja i osobne CLI
 
-Jeśli pokazujesz instalację, agent instaluje snippet raz, otwiera dokładny autoryzowany HTTPS adres i pokazuje readyForFeedback=true po prawdziwym pingu. Rejestrację CLI przedstaw osobno od MCP. Zachowaj zgodę i weryfikację człowieka, jego pierwszą wiadomość oraz wybór planu. Nie pokazuj sekretów lub linków uwierzytelniających.
+Jeśli pokazujesz instalację, agent instaluje snippet raz, otwiera dokładny autoryzowany HTTPS adres i pokazuje readyForFeedback=true po prawdziwym pingu. Rejestrację CLI przedstaw osobno od MCP. Zachowaj zgodę i weryfikację człowieka oraz jego pierwszą wiadomość. Bieżący onboarding pokazuje automatyczny 14-dniowy Team trial bez karty i opcjonalny wybór płatnego planu. Agent może otworzyć Inbox, ale nie wybiera planu ani nie dodaje karty. Nie opisuj tego nagrania jako ręcznego wyboru Free: taki wybór nie nastąpił. Nie pokazuj sekretów lub linków uwierzytelniających.
 
 Do świeżej sceny CLI służy osobna strona https://install.voicedot.ai i repo https://github.com/voicedot/voicedot-install-demo (Workshop Notes). Nie używaj ukończonego Harbor Notes do instalacji od zera. Nowe żądanie musi wysłać nowy mail po zgodach człowieka. Ekran oczekiwania EN/PL kieruje do przycisku potwierdzającego adres w mailu, otwarcia linka w tej samej przeglądarce i powrotu do agenta. Nie ma osobnego kodu do przepisania. Weryfikacja e-maila nie loguje użytkownika; późniejszy link logowania jest osobnym krokiem. Mail i jednorazowe linki pozostają poza filmem.
 
