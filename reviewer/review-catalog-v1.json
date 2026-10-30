@@ -11,7 +11,7 @@
     {
       "id": "P2",
       "projection": "Inspect open Harbor Notes feedback without changing it.",
-      "outcome": "Summarize the headline, button contrast, card picture, quote logo, and phone spacing. The closed Help conversation is excluded.",
+      "outcome": "Summarize the headline, button contrast, card picture, quote logo, and phone spacing. Exclude the resolved Help thread from open work, while retaining other unresolved threads in the same conversation.",
       "readOnly": true
     },
     {

@@ -397,7 +397,7 @@
       "description": "Inspect open Harbor Notes feedback without changing it.",
       "user_prompt": "What feedback is still open on Harbor Notes?",
       "tools_triggered": "search_pins or search_feedback",
-      "expected_output": "Summarize the headline, button contrast, card picture, quote logo, and phone spacing. The closed Help conversation is excluded."
+      "expected_output": "Summarize the headline, button contrast, card picture, quote logo, and phone spacing. Exclude the resolved Help thread from open work, while retaining other unresolved threads in the same conversation."
     },
     {
       "description": "Read the original demo-page button conversation and its replies, distinct from the independent coding-demo page.",
