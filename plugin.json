@@ -26,12 +26,13 @@
         "developerName": "Good Sheet Sp z o.o.",
         "category": "Productivity",
         "capabilities": [
-          "Read page feedback",
-          "Read team handovers",
-          "Prepare review rounds",
-          "Reply with confirmation",
-          "Set up projects and addresses",
-          "Verify widget installation"
+          "Review website feedback and bug reports",
+          "Read voice feedback transcripts",
+          "Read team handovers for AI agents",
+          "Prepare human review rounds",
+          "Reply to feedback after approval",
+          "Set up projects and website addresses",
+          "Guide and verify widget installation"
         ],
         "websiteURL": "https://voicedot.ai/en/docs/mcp",
         "supportURL": "https://voicedot.ai/en/support",
