@@ -15,9 +15,14 @@ Maintained by **Good Sheet Sp z o.o.**, the company behind Voicedot.
 | Agent-assisted account setup | [Agent setup](https://voicedot.ai/en/docs/agents) |
 | Support | [Contact Voicedot](https://voicedot.ai/en/support) |
 
-**Version 0.4.0 is a source candidate for marketplace submission.** This public
-repository and its ZIP are available for inspection; they do not imply an
-approved or published marketplace listing.
+**OpenAI 0.4.0 was submitted on 1 November 2026 and is in review, not published.**
+The frozen artifact and its source revision are recorded in the
+[submission report](submission/reports/2026-11-01-openai-0.4.0.md).
+The current source prepares **0.4.1 for Anthropic**. It does not replace the ZIP
+under OpenAI review and does not imply an Anthropic listing.
+
+For the Claude package, use [the self-contained adapter](adapters/claude-code/README.md)
+and [the Anthropic preparation checklist](submission/anthropic/README.md).
 
 ## What the plugin does
 

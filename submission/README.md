@@ -1,6 +1,9 @@
-# OpenAI submission materials — 0.4.0
+# Marketplace submission materials
 
-**Status on 2026-11-01: submitted to OpenAI, In review, not published.**
+Anthropic 0.4.1 local preparation is tracked in [its checklist](anthropic/README.md);
+that work has not been submitted.
+
+**OpenAI status on 2026-11-01: submitted to OpenAI, In review, not published.**
 The verified package snapshot, hashes, final website link and test limitations
 are recorded in [the submission report](reports/2026-11-01-openai-0.4.0.md).
 The publisher cancelled the first review to use the product homepage, uploaded

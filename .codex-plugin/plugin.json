@@ -1,6 +1,6 @@
 {
   "name": "voicedot",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Install Voicedot in an authorized website, review page feedback and team handovers, reply with confirmation, and prepare human review rounds.",
   "author": {
     "name": "Good Sheet Sp z o.o.",

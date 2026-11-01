@@ -76,7 +76,7 @@ test('Claude adapter is a byte-for-byte generated projection of canonical metada
   const expected = generateClaudeAdapter({ check: true });
   assert.deepEqual(renderClaudeAdapter(plugin, mcp).mcp, json('adapters/claude-code/.mcp.json'));
   for (const [path, content] of expected.files) {
-    assert.equal(readFileSync(resolve(root, 'adapters/claude-code', path), 'utf8'), content);
+    assert.deepEqual(readFileSync(resolve(root, 'adapters/claude-code', path)), Buffer.from(content));
   }
 });
 

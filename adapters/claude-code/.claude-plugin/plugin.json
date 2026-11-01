@@ -1,8 +1,25 @@
 {
   "name": "voicedot",
-  "version": "0.4.0",
+  "displayName": "Voicedot",
+  "version": "0.4.1",
   "description": "Install Voicedot in an authorized website, review page feedback and team handovers, reply with confirmation, and prepare human review rounds.",
   "author": {
-    "name": "Good Sheet Sp z o.o."
-  }
+    "name": "Good Sheet Sp z o.o.",
+    "url": "https://voicedot.ai/en"
+  },
+  "homepage": "https://voicedot.ai/en",
+  "repository": "https://github.com/voicedot/voicedot-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "website-feedback",
+    "design-review",
+    "product-feedback",
+    "coding-agents",
+    "mcp"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://voicedot.ai/en/docs/mcp",
+  "supportUrl": "https://voicedot.ai/en/support",
+  "privacyPolicyUrl": "https://voicedot.ai/en/privacy",
+  "termsOfServiceUrl": "https://voicedot.ai/en/terms"
 }

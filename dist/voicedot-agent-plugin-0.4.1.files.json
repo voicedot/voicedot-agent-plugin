@@ -1,0 +1,170 @@
+{
+  "package": "voicedot-agent-plugin-0.4.1",
+  "files": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "bytes": 8647,
+      "sha256": "bb8ef4c25350f3b49cb7eeb149d41f18261436de262022fd305cfcc5af814660"
+    },
+    {
+      "path": ".mcp.json",
+      "bytes": 318,
+      "sha256": "eee82f727bc5945c600871f5822a2e01742ae0172702a694b69c95b4abeb9b61"
+    },
+    {
+      "path": "adapters/claude-code/.claude-plugin/plugin.json",
+      "bytes": 828,
+      "sha256": "96f599774bd67308fd295a48f83268990f290bae618d14af74bc52ddda3c896c"
+    },
+    {
+      "path": "adapters/claude-code/.mcp.json",
+      "bytes": 115,
+      "sha256": "3e40dc21b6012ebdee434c8d3dec99cb591b5f0fe7474f1543c74619f34335ee"
+    },
+    {
+      "path": "adapters/claude-code/assets/icon.png",
+      "bytes": 20566,
+      "sha256": "394e66a4fdaadec8465e4fc432e6f79aebd7a4cd9e3202c209a58bda30e89852"
+    },
+    {
+      "path": "adapters/claude-code/LICENSE",
+      "bytes": 1065,
+      "sha256": "ea21334798ed9a1cb7a245d80b68c06abe76ad2a4d7ab812ed7b0750cdba7333"
+    },
+    {
+      "path": "adapters/claude-code/README.md",
+      "bytes": 4846,
+      "sha256": "4011fc3add32874e12c6f14bdf777256aa8382a63c6b1f9b8f74941e31cf9333"
+    },
+    {
+      "path": "adapters/claude-code/skills/review-voicedot-feedback/references/markdown-contract.md",
+      "bytes": 590,
+      "sha256": "d29e7ff350d28a88c524fcc9bdccc2bd20d01d8994af1df2301bccff66a6e606"
+    },
+    {
+      "path": "adapters/claude-code/skills/review-voicedot-feedback/references/tool-and-workflow-reference.md",
+      "bytes": 2888,
+      "sha256": "247d02951b4004639c4bd8750961849cb03d9233ce8a2fbdb5a85ca5de36f85f"
+    },
+    {
+      "path": "adapters/claude-code/skills/review-voicedot-feedback/SKILL.md",
+      "bytes": 9856,
+      "sha256": "465c47a8555cd985ebf0f240aed262f4749e5f7a014eb1f6499c199c65687583"
+    },
+    {
+      "path": "assets/icon.png",
+      "bytes": 20566,
+      "sha256": "394e66a4fdaadec8465e4fc432e6f79aebd7a4cd9e3202c209a58bda30e89852"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 3283,
+      "sha256": "d700ab3eac08e07b8c51a3f81b2fc9637cf6b1b085a3d45e778c229eae87aaf0"
+    },
+    {
+      "path": "contract/agent-guide.md",
+      "bytes": 16383,
+      "sha256": "1d4a9893bf3284535449045134cf5cd94fe71a389fc8b496c0eb41f6843bad5e"
+    },
+    {
+      "path": "contract/knowledge/en/address_modes.md",
+      "bytes": 1502,
+      "sha256": "cfded16a01f482b29f8c6f3eca7aa8fbc9644356bebd0ad864e4b01ddeba329c"
+    },
+    {
+      "path": "contract/knowledge/en/agent_workflow.md",
+      "bytes": 1669,
+      "sha256": "2cbe5d024669637d1249436eda557510b90cfee58dccc3780e55715085052671"
+    },
+    {
+      "path": "contract/knowledge/en/how_it_works.md",
+      "bytes": 1831,
+      "sha256": "fd019a1750e0dd80801d03fac81fc8fa8cd45b18f5f342334dd54a2d42c0d37d"
+    },
+    {
+      "path": "contract/knowledge/en/overview.md",
+      "bytes": 1549,
+      "sha256": "5860ae6ce1c46c7fcdd3d8e3cd2d7b8c459c2aa266de7f6ca3a99aa01a3ff95b"
+    },
+    {
+      "path": "contract/knowledge/en/plans.md",
+      "bytes": 2371,
+      "sha256": "b1a2fab71853199bfd74f2738b297e96a005bae4af18ac9ba72d8f2d28e2cc9b"
+    },
+    {
+      "path": "contract/knowledge/en/privacy.md",
+      "bytes": 1370,
+      "sha256": "afd5acdb120cc29eddf10eb4d28e61b53b4bb646804f2be343f1b8a3df428e40"
+    },
+    {
+      "path": "contract/knowledge/en/review_rounds.md",
+      "bytes": 1714,
+      "sha256": "b464c69008e34a58b7cc54fd03dde0b0b471130e34cd86e597bfadd7ab4b5678"
+    },
+    {
+      "path": "contract/knowledge/en/setup.md",
+      "bytes": 2986,
+      "sha256": "f96fcf5ba39194c677522e91b83be88c3c2a6738b9838f6447d43b749cfdb741"
+    },
+    {
+      "path": "contract/knowledge/en/use_cases.md",
+      "bytes": 1711,
+      "sha256": "7ecb6d7fa0f6348fcfbe8f7e6284d568c0f87181efa1b7ae271a92d6fda11a64"
+    },
+    {
+      "path": "contract/knowledge/glossary-pl.md",
+      "bytes": 1612,
+      "sha256": "75c4dbae185fde8e2c053d090ac72d672d73c8bb9feed4f59cea2dca33efc7ae"
+    },
+    {
+      "path": "contract/knowledge/index.json",
+      "bytes": 5889,
+      "sha256": "2abca82a3a8db682b298c27bedb2f1eb543120e03f58b0f6a359fd08260f77e7"
+    },
+    {
+      "path": "contract/source.json",
+      "bytes": 2843,
+      "sha256": "8f3578987b9c831b41464b9e2bd7f985165ffc4bba8268f6689c743d69d84260"
+    },
+    {
+      "path": "contract/voicedot-mcp-contract.json",
+      "bytes": 89603,
+      "sha256": "9f2afbae2f2036b4a70c5e08f8382475169837a7460da3ad93701827f60db438"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "ea21334798ed9a1cb7a245d80b68c06abe76ad2a4d7ab812ed7b0750cdba7333"
+    },
+    {
+      "path": "mcp.json",
+      "bytes": 390,
+      "sha256": "143e692276b826e8bdd3c9975343c0b19f475a52882e89097321a28835e8839b"
+    },
+    {
+      "path": "plugin.json",
+      "bytes": 8774,
+      "sha256": "2787c9c53b478881434c32fc8c8f83314ac415bc3f0d092764a0e09666c58c55"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7483,
+      "sha256": "2e65ebc453a77acc5a1aee04bed8602aaf71ad26c7a800c81760dc9f07a5a918"
+    },
+    {
+      "path": "skills/review-voicedot-feedback/references/markdown-contract.md",
+      "bytes": 590,
+      "sha256": "d29e7ff350d28a88c524fcc9bdccc2bd20d01d8994af1df2301bccff66a6e606"
+    },
+    {
+      "path": "skills/review-voicedot-feedback/references/tool-and-workflow-reference.md",
+      "bytes": 2888,
+      "sha256": "247d02951b4004639c4bd8750961849cb03d9233ce8a2fbdb5a85ca5de36f85f"
+    },
+    {
+      "path": "skills/review-voicedot-feedback/SKILL.md",
+      "bytes": 9856,
+      "sha256": "465c47a8555cd985ebf0f240aed262f4749e5f7a014eb1f6499c199c65687583"
+    }
+  ]
+}

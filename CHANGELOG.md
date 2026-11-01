@@ -1,8 +1,19 @@
 # Changelog
 
-## 0.4.0 - 2026-10-29 (submission candidate)
+## 0.4.1 - 2026-11-01 (Anthropic preparation; not submitted)
 
-- Publish the prepared 0.4.0 source under the Voicedot GitHub organization; marketplace submission remains pending.
+- Generate a self-contained Claude plugin with a README explaining requests, returned data, approvals and optional CLI setup, plus the MIT license and brand icon.
+- Add the visible name, product and source links, legal and support links to the generated Claude manifest; keep the stable identifier `voicedot`.
+- Add a deterministic standalone Claude ZIP, inventory and digest; validate the plugin with the directory profile of the official Claude Code CLI.
+- Replace the obsolete Anthropic submission map with the current developer-portal route and a separate connector preparation checklist.
+- Preserve the 0.4.0 OpenAI artifact and its MCP endpoint, runtime contract and skill behavior unchanged.
+
+## 0.4.0 - 2026-11-01 (submitted to OpenAI; in review)
+
+- Submit the final package with the product homepage, Productivity category, seven feedback capabilities, reviewer instructions and the approved web/mobile/Codex film. Approval and public publication remain pending; see the submission report.
+- The following preparation entries originated on 2026-10-29 and describe the work leading up to submission.
+
+- Publish the prepared 0.4.0 source under the Voicedot GitHub organization.
 - Prepare a new owner-authorized OpenAI draft with the portable `voicedot` identity and explicit OAuth DCR; preserve the older unsubmitted entry separately.
 
 - Add visible preview references for confirmed replies, review rounds and bulk resolutions across turns; preserve exact content, latest-preview checks and safe reply retries.
@@ -10,7 +21,7 @@
 - Update the skill for project addresses, Team/Public handovers, human review rounds, live permissions and confirmed reply retries.
 - Document separate CLI v2 account setup, human identity verification and first feedback.
 - Replace historical review cases with Harbor Notes and Fieldwork Notes; keep the authorized reply rehearsal separate.
-- Keep submission pending actual reviewer, desktop/mobile, video, domain and portal acceptance.
+- Complete reviewer access, desktop/mobile evidence, video, domain verification and portal scans before submission.
 
 ## 0.3.0 - 2026-10-07
 
