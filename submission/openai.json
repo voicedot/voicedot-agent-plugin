@@ -16,17 +16,17 @@
     {
       "name": "listing, logo, skills, starter prompts, country availability and release notes",
       "status": "prepared-locally",
-      "reason": "Canonical plugin.json contains the listing, square brand asset, three starter prompts, all-country availability and no-commerce declaration."
+      "reason": "Canonical plugin.json contains the owner-selected 1 November listing: Website feedback for AI agents, Developer Tools, and intended users including developers, designers and product teams. Square brand asset, three starter prompts, all-country availability and no-commerce declaration remain present. The saved portal still has the previous listing until final reupload."
     },
     {
       "name": "eight review test cases",
       "status": "partially-run",
-      "reason": "Five positive and three negative cases passed in earlier ChatGPT rehearsals. The 30 October recording ledger covers the feedback-to-code-to-deployment-to-human-Checked cycle, handover, search, refusals and a confirmed reply with a duplicate-free retry. A separate fresh Workshop Notes CLI flow completed on 30 October: human consent and email verification, snippet deployment, backend ping reported by the CLI, one human pinned comment and that comment visible in Inbox. Four trimmed video exports exist; final assembly, narration, privacy/playback review and hosting remain separate. Native mobile and remaining client checks are pending."
+      "reason": "The five exact positive prompts have 30 October Chrome evidence. The three exact negative prompts passed on 1 November in ChatGPT Medium using the demo connection: haiku without Voicedot tools, refusal to delete and refusal to reveal unauthorized data. The initial project-list response required one page reload after a host rendering error. The Help thread and its two entries remain intact. These runs concern the existing private installation, not the future final saved bundle. The recorded coding, reply/retry and fresh CLI flows remain historical evidence. Native mobile read and refusal were recorded and inspected on 1 November; integration into the final narrated movie and accessible hosting remain pending."
     },
     {
       "name": "public website, support and privacy content",
       "status": "partially-verified",
-      "reason": "20 October production checks cover listing HTTP/User-Agents, public privacy disclosures, and EN/PL desktop/mobile Chrome layouts. After the owner-confirmed exact-path BIC correction, all 28 focused discovery/HEAD/MCP/outside-scope checks pass. The Chrome screenshot matrix uses an existing cookie profile; a pristine-profile run remains separate."
+      "reason": "On 1 November all four exact listing URLs returned 200 without authentication and served the promised MCP instructions, support route, public privacy policy and terms. Earlier EN/PL layout and User-Agent checks remain historical evidence. This content/access check does not replace interactive support-form or pristine-profile layout testing."
     },
     {
       "name": "business identity and portal access",
@@ -36,12 +36,17 @@
     {
       "name": "OAuth and domain challenge",
       "status": "verified-for-saved-draft",
-      "reason": "On 30 October a fresh rescan of the same saved draft finished with Configured, Authorized, Domain verified, 29 tools and no MCP findings in the live portal. The newly corrected local round-case text has not replaced that saved bundle. Earlier reconnect and refresh tests remain historical; revoked-bearer HTTP replay remains separate."
+      "reason": "On 1 November the same saved draft visibly reports Configured, Authorized, Domain verified, 29 tools and no findings in its latest MCP scan, dated two days earlier. Metadata reports No findings and the skill Checks passed. No new scan or upload was triggered. The saved listing and bundle still require final replacement after film hosting. Earlier reconnect and refresh tests remain historical; revoked-bearer HTTP replay remains separate."
     },
     {
       "name": "CLI email verification screen",
       "status": "deployed-and-fresh-flow-recorded",
       "reason": "Production app revision 2565b4a9 provides EN/PL email-link instructions with no manual credential input. Desktop/mobile rendered-template checks passed, followed by a fresh production CLI registration and human email verification. The flow continued through deployment, agent-confirmed backend ping, human first comment and Inbox. This UI-only change does not alter MCP contract provenance. Final assembled recording review remains pending."
+    },
+    {
+      "name": "production reviewer login",
+      "status": "verified-not-shared",
+      "reason": "On 1 November the existing dedicated reviewer account signed in with its password through the production reviewer login after owner approval. Its identity, both demo projects, handed-over Fieldwork note and Homepage fixes round Checked 1/1 with a closed page pin were verified in Chrome. This test required no mailbox, OTP, MFA or onboarding. The five secure reviewer fields in OpenAI remain empty; no credentials have been transferred."
     },
     {
       "name": "final attestation",
@@ -71,7 +76,7 @@
   ],
   "result": {
     "status": "blocked",
-    "claim": "No review submission. The 30 October recording ledger covers both a human feedback-to-code-to-public-deployment-to-Checked cycle with reply/retry and a separate fresh Workshop Notes CLI registration-to-installation-to-human-first-comment-to-Inbox flow. Four CLI video exports exist. Remaining confirmation variants, final saved-draft checks, native mobile, verified final hosted recording, immutable candidate and private owner fields remain gates."
+    "claim": "No review submission. Listing selected locally; dedicated production reviewer login and native mobile footage verified; exact three negative cases now pass alongside earlier five positive cases. Final mobile movie assembly, verified hosting, final ZIP/reupload, saved-version scans/checks, immutable release evidence, secure reviewer fields and owner identity/attestations remain. Do not infer portal readiness from package validation."
   },
   "recovery": "Complete remaining evidence and human actions, add and verify the recording, rebuild and inspect the final ZIP, replace the same saved draft while preserving its identity and MCP binding, recheck portal findings, and obtain owner attestations. Submit only after Piotr explicitly says wyślij."
 }
