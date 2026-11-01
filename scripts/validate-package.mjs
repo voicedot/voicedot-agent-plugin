@@ -26,7 +26,8 @@ export function validatePlugin(plugin) {
   if (!listing.displayName || listing.displayName.length > 30 || /\b(?:MCP|Plugin)\b/i.test(listing.displayName) || !listing.longDescription || listing.longDescription.length > 4000) fail('OpenAI name or description exceeds listing limits');
   if (openai.review.test_cases.positive.length !== 5 || openai.review.test_cases.negative.length !== 3) fail('OpenAI requires exactly five positive and three negative cases');
   for (const key of ['websiteURL', 'supportURL', 'privacyPolicyURL', 'termsOfServiceURL']) {
-    if (!String(listing[key] || '').startsWith('https://voicedot.ai/en/')) fail(`OpenAI listing ${key} is missing`);
+    const url = String(listing[key] || '');
+    if (url !== 'https://voicedot.ai/en' && !url.startsWith('https://voicedot.ai/en/')) fail(`OpenAI listing ${key} is missing`);
   }
   if (listing.logo !== './assets/icon.png' || listing.composerIcon !== './assets/icon.png') fail('OpenAI icon references are invalid');
   if (openai.review?.commerce !== false || !Array.isArray(openai.publication?.countries)) fail('OpenAI review or publication metadata is incomplete');

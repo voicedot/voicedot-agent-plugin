@@ -6,7 +6,7 @@
     "name": "Good Sheet Sp z o.o.",
     "url": "https://voicedot.ai/en"
   },
-  "homepage": "https://voicedot.ai/en/docs/mcp",
+  "homepage": "https://voicedot.ai/en",
   "repository": "https://github.com/voicedot/voicedot-agent-plugin",
   "license": "MIT",
   "keywords": [
@@ -102,7 +102,7 @@
       "Set up projects and website addresses",
       "Guide and verify widget installation"
     ],
-    "websiteURL": "https://voicedot.ai/en/docs/mcp",
+    "websiteURL": "https://voicedot.ai/en",
     "supportURL": "https://voicedot.ai/en/support",
     "privacyPolicyURL": "https://voicedot.ai/en/privacy",
     "termsOfServiceURL": "https://voicedot.ai/en/terms",
