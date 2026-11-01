@@ -24,7 +24,7 @@
         "shortDescription": "Website feedback for AI agents",
         "longDescription": "Turn feedback pinned to your website into clear tasks for your coding agent. Voicedot brings visitor comments, transcribed voice feedback, page context and team replies into ChatGPT and Codex. Built for developers, designers and product teams reviewing website changes. Find what needs attention, understand the conversation and prepare a review round so a person can check the result on the page.\n\nAsk for open feedback, read a conversation with its replies, or pick up work your team has handed to an agent. A coding agent with access to your repository can use this context to propose and implement a fix using its own authorized tools. Voicedot connects the feedback and review steps; it does not grant access to your code or deployment.\n\nWith the appropriate permissions, set up projects and website addresses, get widget installation instructions and verify a fresh installation ping. Reply to visitors, create review rounds or resolve feedback only through the supported confirmation flow. The first feedback message and final review decisions stay with the person.\n\nAccess follows your Voicedot connection and each address’s sharing mode. Private addresses expose their conversations; Team and Public addresses expose only conversations handed to an agent. The plugin cannot delete feedback, access projects outside your connection or make purchases. New-account setup is available separately through the official Voicedot CLI, with human identity verification.",
         "developerName": "Good Sheet Sp z o.o.",
-        "category": "Developer Tools",
+        "category": "Productivity",
         "capabilities": [
           "Read page feedback",
           "Read team handovers",
@@ -48,6 +48,7 @@
       "onboardingSkill": "./skills/review-voicedot-feedback/SKILL.md",
       "review": {
         "commerce": false,
+        "demo_recording_url": "https://www.dropbox.com/scl/fi/4h8rr1it9bm99nbbdr2ji/voicedot-openai-review-v3-2026-11-01.mp4?rlkey=rp2gk6011auep3dc9cplsrqpt&dl=0",
         "test_cases": {
           "positive": [
             {
