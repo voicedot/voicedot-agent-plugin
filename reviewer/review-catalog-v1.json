@@ -11,7 +11,7 @@
     {
       "id": "P2",
       "projection": "Inspect open Harbor Notes feedback without changing it.",
-      "outcome": "Summarize the headline, button contrast, card picture, quote logo, and phone spacing. The closed Help conversation is excluded.",
+      "outcome": "Summarize the headline, button contrast, card picture, quote logo, and phone spacing. Exclude the resolved Help thread from open work, while retaining other unresolved threads in the same conversation.",
       "readOnly": true
     },
     {
@@ -28,8 +28,8 @@
     },
     {
       "id": "P5",
-      "projection": "Inspect the open human review round.",
-      "outcome": "Show Homepage fixes, with the Start a workspace button checked and the headline still awaiting human review. Do not check either item as the agent.",
+      "projection": "Inspect the latest human review round and its recorded decision.",
+      "outcome": "Show the latest Homepage fixes round for the deployed Start a workspace button contrast change on https://review.voicedot.ai. The single item was checked by the human, the round is completed, and its linked page pin is closed. Report the recorded decision without changing it or checking any item as the agent. Keep the discussion status separate: a later team reply may leave the discussion awaiting the person who left the feedback even though the pin remains closed.",
       "readOnly": true
     },
     {

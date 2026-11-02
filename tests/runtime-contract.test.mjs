@@ -5,6 +5,16 @@ import { resolve } from 'node:path';
 import { assertContractMatches, verifyContractIntegrity } from '../scripts/sync-runtime-contract.mjs';
 import { renderSubmission, generateSubmission } from '../scripts/generate-submission.mjs';
 const root = resolve(import.meta.dirname, '..');
+test('legacy submission follows the canonical category instead of silently using Productivity', () => {
+  const contract = verifyContractIntegrity();
+  const plugin = JSON.parse(readFileSync(resolve(root, 'plugin.json')));
+  for (const [category, expected] of [['Developer Tools', 'DEVELOPER_TOOLS'], ['Productivity', 'PRODUCTIVITY']]) {
+    plugin.extensions['com.openai'].interface.category = category;
+    assert.equal(renderSubmission(plugin, contract).app_info.category, expected);
+  }
+  plugin.extensions['com.openai'].interface.category = 'Unmapped category';
+  assert.throws(() => renderSubmission(plugin, contract), /No legacy submission category mapping/);
+});
 test('submission contains every runtime tool with the exact current annotations', () => {
   const contract = verifyContractIntegrity();
   const plugin = JSON.parse(readFileSync(resolve(root, 'plugin.json')));

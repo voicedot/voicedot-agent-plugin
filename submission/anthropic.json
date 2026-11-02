@@ -1,11 +1,87 @@
 {
   "platform": "Anthropic",
   "status": "non-submitted",
-  "why": "Record the documented public-repository route and both official forms without entering either form.",
-  "pageOrSourceBlocker": {"kind": "verified-page", "source": "https://claude.com/docs/plugins/submit", "reason": "Official documentation requires a public GitHub repository and identifies delegable Claude.ai directory-management access or eligible Console roles plus both forms."},
-  "fields": [{"name": "public GitHub repository", "status": "owner-blocked", "reason": "An immutable candidate is absent."}, {"name": "Claude.ai directory management access or Console Developer, Admin, or Owner role", "status": "delegable-prerequisite", "reason": "The documented access is delegable or role-based; no access change is performed locally."}, {"name": "Claude.ai form", "status": "owner-only", "source": "https://claude.ai/admin-settings/directory/submissions/plugins/new", "reason": "Never enter or submit this form locally."}, {"name": "Console form", "status": "owner-only", "source": "https://platform.claude.com/plugins/submit", "reason": "Never enter or submit this form locally."}, {"name": "other portal fields", "status": "blocked", "reason": "The official page does not enumerate them; do not infer fields."}],
-  "sharedData": ["candidate.name", "candidate.version", "candidate.description", "candidate.repository", "candidate.archiveSha256", "catalog.caseIds"],
-  "preApprovalChecks": ["immutableCandidate", "logo", "website", "supportUrl", "privacyUrl", "termsUrl", "country", "reviewerAccess", "cleanClientEvidence", "productionEvidence"],
-  "result": {"status": "blocked", "claim": "No Anthropic submission has been prepared or made."},
-  "recovery": "Owner supplies the missing evidence and independently uses an official submission form after separate approval."
+  "why": "Prepare the current GitHub plugin-bundle route without creating a portal entry or changing the production MCP contract.",
+  "pageOrSourceBlocker": {
+    "kind": "verified-page",
+    "source": "https://claude.com/docs/plugins/submit",
+    "reason": "The current developer portal takes a repository, plugin folder, tracked branch or tag, data-handling answers and compliance acknowledgments."
+  },
+  "fields": [
+    {
+      "name": "source repository",
+      "status": "prepared-local",
+      "value": "https://github.com/voicedot/voicedot-agent-plugin"
+    },
+    {
+      "name": "plugin path",
+      "status": "prepared-local",
+      "value": "adapters/claude-code"
+    },
+    {
+      "name": "tracked branch",
+      "status": "pending-publication",
+      "value": "release",
+      "reason": "Prepare the local release ref after checks; remote publication needs the owner go."
+    },
+    {
+      "name": "publisher account and GitHub push access",
+      "status": "pending-live-check",
+      "reason": "Paid individual plans can submit without an organization role. Confirm the long-term owning account and its connected GitHub repository access."
+    },
+    {
+      "name": "developer portal",
+      "status": "pending-validation",
+      "source": "https://claude.ai/directory/manage",
+      "reason": "Use Submit new \u2192 Plugin bundle only after the source ref is available remotely."
+    },
+    {
+      "name": "listing and data handling",
+      "status": "draft",
+      "reason": "Review submission/anthropic/README.md and the answers file against the actual portal questions."
+    },
+    {
+      "name": "compliance acknowledgments",
+      "status": "owner-only",
+      "reason": "The publisher reviews and accepts the actual four acknowledgments in the portal."
+    },
+    {
+      "name": "Claude.ai and Claude Code OAuth acceptance",
+      "status": "pending-live-test",
+      "reason": "Local validation is not authenticated client evidence."
+    },
+    {
+      "name": "separate remote MCP connector",
+      "status": "deferred",
+      "reason": "The first-party remote server needs its own connector entry. Preserve the current OpenAI-reviewed runtime contract until the owner schedules that work."
+    }
+  ],
+  "sharedData": [
+    "candidate.name",
+    "candidate.version",
+    "candidate.description",
+    "candidate.repository",
+    "candidate.archiveSha256",
+    "catalog.caseIds"
+  ],
+  "preApprovalChecks": [
+    "immutableCandidate",
+    "logo",
+    "website",
+    "supportUrl",
+    "privacyUrl",
+    "termsUrl",
+    "country",
+    "reviewerAccess",
+    "cleanClientEvidence",
+    "productionEvidence"
+  ],
+  "result": {
+    "status": "blocked",
+    "claim": "The local Anthropic preparation is not evidence of directory validation, client acceptance or public availability."
+  },
+  "recovery": "Complete authenticated Claude tests, publish the source ref with owner authorization, validate that commit in the developer portal, review private access and compliance, and obtain separate authorization for the final send.",
+  "format": "internal-preparation-map; not an Anthropic upload schema",
+  "checkedOn": "2026-11-01",
+  "candidateVersion": "0.4.1"
 }

@@ -14,9 +14,19 @@ export function renderClaudeAdapter(plugin, mcp) {
   return {
     manifest: {
       name: plugin.name,
+      displayName: plugin.extensions['com.openai'].interface.displayName,
       version: plugin.version,
       description: plugin.description,
-      author: { name: plugin.author.name }
+      author: { ...plugin.author },
+      homepage: plugin.homepage,
+      repository: plugin.repository,
+      license: plugin.license,
+      keywords: plugin.keywords,
+      icon: './assets/icon.png',
+      documentationUrl: 'https://voicedot.ai/en/docs/mcp',
+      supportUrl: plugin.extensions['com.openai'].interface.supportURL,
+      privacyPolicyUrl: plugin.extensions['com.openai'].interface.privacyPolicyURL,
+      termsOfServiceUrl: plugin.extensions['com.openai'].interface.termsOfServiceURL
     },
     mcp: { mcpServers: { voicedot: { type: 'http', url: server.url } } }
   };
@@ -35,6 +45,11 @@ export function generatedAdapter() {
     files: new Map([
       ['.claude-plugin/plugin.json', json(output.manifest)],
       ['.mcp.json', json(output.mcp)],
+      ['README.md', readFileSync(resolve(root, 'scripts/templates/claude-code-README.md'), 'utf8')
+        .replaceAll('{{VERSION}}', output.manifest.version)
+        .replaceAll('{{MCP_URL}}', output.mcp.mcpServers.voicedot.url)],
+      ['LICENSE', readFileSync(resolve(root, 'LICENSE'), 'utf8')],
+      ['assets/icon.png', readFileSync(resolve(root, 'assets/icon.png'))],
       ...listFiles(canonicalSkill).map((path) => [relative(canonicalSkill, path).replace(/^/, 'skills/review-voicedot-feedback/'), readFileSync(path, 'utf8')])
     ])
   };
@@ -44,8 +59,8 @@ export function generateClaudeAdapter({ check = false } = {}) {
   const output = generatedAdapter();
   if (check) {
     if (!existsSync(adapterRoot)) throw new Error('Claude adapter is missing; run npm run generate.');
-    const actual = new Map(listFiles(adapterRoot).map((path) => [relative(adapterRoot, path), readFileSync(path, 'utf8')]));
-    if (actual.size !== output.files.size || [...output.files].some(([path, content]) => actual.get(path) !== content)) throw new Error('Claude adapter is stale or hand-maintained; run npm run generate.');
+    const actual = new Map(listFiles(adapterRoot).map((path) => [relative(adapterRoot, path), readFileSync(path)]));
+    if (actual.size !== output.files.size || [...output.files].some(([path, content]) => !actual.get(path)?.equals(Buffer.from(content)))) throw new Error('Claude adapter is stale or hand-maintained; run npm run generate.');
   } else {
     rmSync(adapterRoot, { recursive: true, force: true });
     mkdirSync(adapterRoot, { recursive: true });

@@ -1,7 +1,7 @@
 {
   "platform": "OpenAI",
   "status": "non-submitted",
-  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the current 29-tool production contract, dedicated demo account and independent coding-demo repository. Local previewId and result-copy changes are not yet in the saved portal draft. Nothing has been sent for review.",
+  "why": "Prepare Voicedot 0.4.0 for Good Sheet Sp z o.o. using the 29-tool contract, dedicated demo account and independent coding-demo repository. The local package tracks runtime source ad658c43. The exact saved portal bundle needs a fresh comparison before final handoff. Nothing has been sent for review.",
   "pageOrSourceBlocker": {
     "kind": "verified-page",
     "source": "https://developers.openai.com/plugins/deploy/submission",
@@ -11,22 +11,22 @@
     {
       "name": "Current runtime contract and account setup",
       "status": "candidate-prepared",
-      "reason": "The package mirrors the 29-tool runtime at 10f17ead and knowledge 2026-10-20.1. A fresh Medium ChatGPT preview survived reload; separate human confirmation sent exactly one reply and a same-operation retry returned the original message without duplication. Remaining confirmation variants and saved-draft scans remain pending."
+      "reason": "The package source provenance records runtime ad658c43 and knowledge 2026-10-20.1. The local ZIP fingerprint is derived from the actual archive by the submission validator. Runtime provenance does not itself prove the saved portal version or a fresh production check. Historical confirmation tests and the 30 October recorded reply/retry are tracked separately from remaining confirmation variants."
     },
     {
       "name": "listing, logo, skills, starter prompts, country availability and release notes",
       "status": "prepared-locally",
-      "reason": "Canonical plugin.json contains the listing, square brand asset, three starter prompts, all-country availability and no-commerce declaration."
+      "reason": "Canonical plugin.json contains the owner-selected 1 November listing: Website feedback for AI agents, Productivity, and intended users including developers, designers and product teams. The final category follows the owner's positioning alongside Linear and Asana: feedback, team coordination and human review, with coding agents carrying out authorized fixes. Square brand asset, three starter prompts, all-country availability and no-commerce declaration remain present. The saved portal still has the previous description until final reupload."
     },
     {
       "name": "eight review test cases",
       "status": "partially-run",
-      "reason": "Five positive and three negative cases passed in the previous ChatGPT rehearsal; reruns against the current contract remain separate. Demo widget comments, confirmed team replies and Help closure are verified. The actual human feedback-to-code-to-public-deployment-to-Checked cycle and restricted HTTPS Git push passed on 21 October. Fresh CLI signup, installation, human first feedback and human Free choice also passed. Native mobile and remaining client checks are pending."
+      "reason": "The five exact positive prompts have 30 October Chrome evidence. The three exact negative prompts passed on 1 November in ChatGPT Medium using the demo connection: haiku without Voicedot tools, refusal to delete and refusal to reveal unauthorized data. The initial project-list response required one page reload after a host rendering error. The Help thread and its two entries remain intact. These runs concern the existing private installation, not the future final saved bundle. The recorded coding, reply/retry and fresh CLI flows remain historical evidence. Native mobile read and refusal are included in the final v3 narrated movie; its viewing link was verified while signed out on 1 November. Final saved-version checks remain separate."
     },
     {
       "name": "public website, support and privacy content",
       "status": "partially-verified",
-      "reason": "20 October production checks cover listing HTTP/User-Agents, public privacy disclosures, and EN/PL desktop/mobile Chrome layouts. After the owner-confirmed exact-path BIC correction, all 28 focused discovery/HEAD/MCP/outside-scope checks pass. The Chrome screenshot matrix uses an existing cookie profile; a pristine-profile run remains separate."
+      "reason": "On 1 November all four exact listing URLs returned 200 without authentication and served the promised MCP instructions, support route, public privacy policy and terms. Earlier EN/PL layout and User-Agent checks remain historical evidence. This content/access check does not replace interactive support-form or pristine-profile layout testing."
     },
     {
       "name": "business identity and portal access",
@@ -36,7 +36,22 @@
     {
       "name": "OAuth and domain challenge",
       "status": "verified-for-saved-draft",
-      "reason": "On 20 October the saved 0.4.0 draft showed Configured, a verified domain, 29 tools and no MCP findings. A separate private ChatGPT test installation connected, disconnected, reconnected and automatically rotated refresh credentials; a real call after the original access expiry succeeded. Revoked-bearer HTTP replay remains separate. New local bundle changes still need authorized replacement of the same draft and saved-version checks."
+      "reason": "On 1 November the same saved draft visibly reports Configured, Authorized, Domain verified, 29 tools and no findings in its latest MCP scan, dated two days earlier. Metadata reports No findings and the skill Checks passed. No new scan or upload was triggered. The saved listing and bundle still require final replacement after film hosting. Earlier reconnect and refresh tests remain historical; revoked-bearer HTTP replay remains separate."
+    },
+    {
+      "name": "CLI email verification screen",
+      "status": "deployed-and-fresh-flow-recorded",
+      "reason": "Production app revision 2565b4a9 provides EN/PL email-link instructions with no manual credential input. Desktop/mobile rendered-template checks passed, followed by a fresh production CLI registration and human email verification. The flow continued through deployment, agent-confirmed backend ping, human first comment and Inbox. This UI-only change does not alter MCP contract provenance. CLI evidence is separate from the final catalog movie, which demonstrates the selected review cases and coding workflow."
+    },
+    {
+      "name": "production reviewer login",
+      "status": "verified-and-saved-privately",
+      "reason": "On 1 November the existing dedicated reviewer account signed in through the production reviewer login after owner consent. Its identity, both demo projects, handed-over Fieldwork note and Homepage fixes round Checked 1/1 with a closed page pin were verified in Chrome. This test required no mailbox, OTP, MFA or onboarding. After separate owner consent, all five secure reviewer fields were saved in the same OpenAI draft and checked after reloading. The password is concealed by the portal; no credential is present in this repository or archive. Repository-write access was not transferred."
+    },
+    {
+      "name": "demo recording",
+      "status": "hosted-and-verified",
+      "reason": "The owner supplied the 1 November v3 recording and a Dropbox viewing link. The six-minute 1920x1080 file matches its expected SHA256 and decodes completely. Desktop review cases, coding-to-human-review workflow and the native phone read/refusal chapter were inspected. The Dropbox link plays while signed out, offers 1080p and supports seeking to the middle and end without account access. The verified URL is present in canonical review metadata. Voice quality acceptance remains with the owner; technical playback is not a human listening assessment."
     },
     {
       "name": "final attestation",
@@ -66,7 +81,7 @@
   ],
   "result": {
     "status": "blocked",
-    "claim": "No review submission. The real coding/review cycle, restricted reviewer Git push, CLI setup and human Checked are verified. The 22 October Medium reply/retry acceptance passed with one stored reply. PreviewId negative variants, round/bulk acceptance, refreshed saved-draft scans, native mobile, a verified recording URL and private owner fields remain gates. New local package changes do not replace the saved portal draft."
+    "claim": "No review submission. Listing selected locally; dedicated production reviewer login, final hosted v3 film and native mobile chapter verified; exact three negative cases now pass alongside earlier five positive cases. Secure reviewer fields are saved in the existing OpenAI draft after owner consent. Final ZIP/reupload, saved-version scans/checks, immutable release evidence and owner identity/attestations remain. Do not infer portal readiness from package validation."
   },
   "recovery": "Complete remaining evidence and human actions, add and verify the recording, rebuild and inspect the final ZIP, replace the same saved draft while preserving its identity and MCP binding, recheck portal findings, and obtain owner attestations. Submit only after Piotr explicitly says wyślij."
 }

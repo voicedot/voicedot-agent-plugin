@@ -6,10 +6,15 @@ import { verifyContractIntegrity } from './sync-runtime-contract.mjs';
 const root = resolve(import.meta.dirname, '..');
 export function renderSubmission(plugin, contract) {
   const { interface: listing, review } = plugin.extensions['com.openai'];
+  const legacyCategory = {
+    'Developer Tools': 'DEVELOPER_TOOLS',
+    Productivity: 'PRODUCTIVITY',
+  }[listing.category];
+  if (!legacyCategory) throw new Error(`No legacy submission category mapping for: ${listing.category}`);
   return {
     $schema: 'https://developers.openai.com/plugins/schemas/chatgpt-app-submission.v1.json',
     schema_version: 1,
-    app_info: { display_name: listing.displayName, subtitle: listing.shortDescription, description: listing.longDescription, category: 'PRODUCTIVITY' },
+    app_info: { display_name: listing.displayName, subtitle: listing.shortDescription, description: listing.longDescription, category: legacyCategory },
     // The current guidelines omit mandatory justifications, but the published v1 JSON import schema still requires them.
     // Keep this legacy-import compatibility derived from the same current contract; the ZIP manifest does not need it.
     tools: Object.fromEntries(contract.tools.map(({ name, annotations, description }) => [name, {

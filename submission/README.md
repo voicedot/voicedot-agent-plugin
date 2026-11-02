@@ -1,6 +1,18 @@
-# OpenAI submission materials — 0.4.0
+# Marketplace submission materials
 
-Prepared on 2026-10-20. This is a local candidate, not a submission or publication.
+Anthropic 0.4.1 local preparation is tracked in [its checklist](anthropic/README.md);
+that work has not been submitted.
+
+**OpenAI status on 2026-11-01: submitted to OpenAI, In review, not published.**
+The verified package snapshot, hashes, final website link and test limitations
+are recorded in [the submission report](reports/2026-11-01-openai-0.4.0.md).
+The publisher cancelled the first review to use the product homepage, uploaded
+the corrected ZIP and submitted again. Keep the active review and its frozen
+artifact intact.
+
+The preparation notes below originated on 2026-10-20. They describe the workflow
+and earlier gates, not the current portal status. JSON preflight cards are
+preparation/provenance checks; they do not query the live submission.
 
 - `plugin.json`: listing, three starter prompts, five positive and three negative cases, all available countries and no commerce.
 - `chatgpt-app-submission.json`: generated form import with exact annotations for all 29 tools.
@@ -9,7 +21,10 @@ Prepared on 2026-10-20. This is a local candidate, not a submission or publicati
 - `assets/icon.png`: existing square brand PNG.
 - `recording-plan.md`: actual ChatGPT rehearsal plan, not a recording.
 
-Use the existing Voicedot plugin identity in the Holy organization; the observed developer is Good Sheet Sp z o.o. Do not create a duplicate. The historical portal version 0.1.1 still describes read-only access and lacks skills; update it only through the supported full-ZIP draft flow after materials are complete. Preserve its one remote MCP connection and verify saved connection state after reupload.
+Use the existing Voicedot plugin identity and the publisher Good Sheet Sp z o.o.
+Do not create a duplicate. The old 0.1.1 portal entry was historical and is not
+the active 0.4.0 submission. Preserve the configured remote MCP connection;
+follow the current portal lifecycle before any later update.
 
 ## Required gates
 
