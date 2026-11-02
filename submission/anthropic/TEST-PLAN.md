@@ -4,6 +4,21 @@ Status: prepared, authenticated runs pending. Keep results separate for
 Claude.ai custom connector, Claude Code plugin load and directory installation.
 Tests run in another host do not prove this host works.
 
+## Protect the active OpenAI review
+
+Owner decision, 2 November 2026: the shared reviewer account is read-only for
+these tests while OpenAI review is active. Run only the three read prompts and
+two refusal prompts below on Harbor Notes and Fieldwork Notes. Do not prepare or
+send replies, create or change rounds, alter handovers, pin visibility or discussion
+status, create projects or open installation-verification windows. A preview can
+change server state even when nothing has been sent yet. A refusal must not fall
+back to a different write operation.
+
+Write acceptance tests require separate disposable fixtures and explicit owner
+authorization, or a separately scheduled run after the OpenAI review. No such run
+is authorized by this plan. Preserve the existing reviewer credentials and sample
+data. Record the before/after state for the selected threads and rounds.
+
 ## Local package checks
 
 ```sh
@@ -51,11 +66,9 @@ claude --plugin-dir ./adapters/claude-code
 
 Confirm the plugin skill and remote server actually load; authenticate through
 Claude Code's normal MCP interface. A valid manifest or a 401 endpoint is not
-proof of a working OAuth session. Repeat the read and refusal prompts above.
-Request a reply preview on a deliberately chosen demo thread, inspect its target,
-content and visible reference, then stop unless the owner authorizes the exact
-write. With authorization, confirm in the next turn and retry the same preview
-once; verify exactly one reply, not two. Never accept consent on the owner's behalf
+proof of a working OAuth session. Repeat only the three read prompts and two
+refusal prompts above. Do not request a reply preview or any other stateful
+preparation on the shared demo account. Never accept consent on the owner's behalf
 or mark Checked/Needs fix for them.
 
 Do not grant general shell auto-approval or disable host protections to make a
